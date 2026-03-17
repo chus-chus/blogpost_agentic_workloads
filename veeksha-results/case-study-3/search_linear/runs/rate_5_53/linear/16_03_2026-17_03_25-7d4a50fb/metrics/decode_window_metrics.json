@@ -1,0 +1,56 @@
+{
+  "config": {
+    "min_active_requests": "max_observed",
+    "resolved_min_active_requests": 76,
+    "selection_strategy": "all",
+    "anchor_to_client_pickup": true,
+    "require_streaming": true
+  },
+  "eligible_requests": {
+    "total_request_rows": 1666,
+    "eligible": 1666,
+    "skipped": {
+      "non_stream": 0,
+      "missing_anchor": 0,
+      "no_decode_chunks": 0,
+      "empty": 0
+    }
+  },
+  "windows": {
+    "num_candidate_segments": 1,
+    "num_selected_segments": 1,
+    "total_duration_s": 0.5585984947210818,
+    "per_window": [
+      {
+        "window_index": 0,
+        "start": 298.0802281668979,
+        "end": 298.63882666161896,
+        "duration_s": 0.5585984947210818,
+        "tbc_count": 1777,
+        "tbc_mean": 0.024723088357243298,
+        "tbc_median": 0.024003705009818077,
+        "tbc_p99": 0.04789022818207741
+      }
+    ]
+  },
+  "tbc_in_window_stats": {
+    "count": 1777,
+    "mean": 0.024723088357243298,
+    "median": 0.024003705009818077,
+    "std": 0.005233446986042813,
+    "min": 0.019303765147924423,
+    "max": 0.09673460945487022,
+    "p90": 0.02640040144324303,
+    "p99": 0.04789022818207741
+  },
+  "notes": [
+    "Times are relative to the benchmark's request-level time reference.",
+    "Decode interval is approximated using TTFC and total stream duration.",
+    "TBC samples are included based on chunk-arrival time within the window(s)."
+  ],
+  "window": {
+    "start": 298.0802281668979,
+    "end": 298.63882666161896,
+    "duration_s": 0.5585984947210818
+  }
+}

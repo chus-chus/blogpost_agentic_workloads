@@ -1,0 +1,21 @@
+- type: performance
+  target_channels: ["text"]
+  stream_metrics: false
+  slos:
+    - type: constant
+      name: "P95 TTFC <= 750ms"
+      metric: ttfc
+      percentile: 0.95
+      value: 0.75
+    - type: constant
+      name: "P95 TBC <= 75ms"
+      metric: tbc
+      percentile: 0.95
+      value: 0.075
+  text_channel:
+    decode_window_enabled: true
+    decode_window_config:
+      min_active_requests: "max_observed"
+      selection_strategy: all
+      anchor_to_client_pickup: true
+      require_streaming: true

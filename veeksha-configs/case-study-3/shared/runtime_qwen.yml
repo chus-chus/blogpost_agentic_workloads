@@ -1,0 +1,10 @@
+benchmark_timeout: 300
+post_timeout_grace_seconds: 45
+max_sessions: -1
+num_dispatcher_threads: 4
+num_completion_threads: 4
+num_client_threads: 8
+warmup_request:
+  enabled: true
+  prompt: Warm up.
+  output_tokens: 8

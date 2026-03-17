@@ -1,0 +1,96 @@
+output_dir: benchmark_output
+seed: 77
+session_generator:
+  session_graph:
+    inherit_history: true
+    num_request_generator:
+      min: 110
+      max: 150
+      type: uniform
+    request_wait_generator:
+      arrival_rate: 31.25
+      type: poisson
+    type: linear
+  channels:
+  - body_length_generator:
+      min: 400
+      max: 600
+      type: uniform
+    shared_prefix_ratio: 0.0
+    shared_prefix_probability: 1.0
+    type: text
+  output_spec:
+    text:
+      output_length_generator:
+        min: 150
+        max: 250
+        type: uniform
+    image: null
+    audio: null
+    video: null
+  type: synthetic
+traffic_scheduler:
+  cancel_session_on_failure: true
+  target_concurrent_sessions: 1
+  rampup_seconds: 0
+  type: concurrent
+evaluators:
+- target_channels:
+  - 1
+  slos:
+  - percentile: 0.99
+    name: P99 TTFC
+    metric: ttfc
+    value: 0.5
+    type: constant
+  - percentile: 0.9
+    name: P90 TBC
+    metric: tbc
+    value: 0.05
+    type: constant
+  stream_metrics: true
+  stream_metrics_interval: 5.0
+  text_channel:
+    decode_window_enabled: false
+    decode_window_config: null
+    type: text
+  image_channel:
+    type: image
+  audio_channel: null
+  video_channel: null
+  type: performance
+client:
+  api_base: http://localhost:8000/v1
+  api_key: null
+  model: meta-llama/Llama-3.1-8B-Instruct
+  address_append_value: chat/completions
+  request_timeout: 300
+  additional_sampling_params: '{}'
+  max_tokens_param: max_completion_tokens
+  ignore_eos: true
+  min_tokens_param: null
+  use_min_tokens_prompt_fallback: false
+  additional_sampling_params_dict: {}
+  type: openai_chat_completions
+runtime:
+  max_sessions: 5
+  benchmark_timeout: -1
+  post_timeout_grace_seconds: -1
+  num_dispatcher_threads: 2
+  num_completion_threads: 2
+  num_client_threads: 3
+  pregenerate_sessions: false
+trace_recorder:
+  enabled: true
+  include_content: false
+server: null
+wandb:
+  enabled: false
+  project: null
+  entity: null
+  group: null
+  run_name: null
+  tags: []
+  notes: null
+  mode: null
+  log_artifacts: true

@@ -1,0 +1,239 @@
+{
+  "source_trace_bundle": "veeksha-traces/case-study-2",
+  "trace_flavor": "timed_synthetic_session",
+  "rate_model": {
+    "rate_basis": "request_rate",
+    "normalized_rate_unit": "requests/s",
+    "normalized_rate_symbol": "rho",
+    "fresh_input_tokens_per_request": 500,
+    "output_tokens_per_request": 300,
+    "fresh_input_tokens_per_s_formula": "500 * rho",
+    "requested_output_tokens_per_s_formula": "300 * rho",
+    "workloads": {
+      "linear": {
+        "requests_per_session": 5,
+        "fresh_input_tokens_per_session": 2500,
+        "output_tokens_per_session": 1500,
+        "session_rate_formula": "rho / 5"
+      },
+      "dag": {
+        "requests_per_session": 15,
+        "fresh_input_tokens_per_session": 7500,
+        "output_tokens_per_session": 4500,
+        "session_rate_formula": "rho / 15"
+      }
+    }
+  },
+  "comparison": {
+    "cacheable_history_ratio_dag_to_linear": 1.266667,
+    "effective_input_ratio_dag_to_linear": 1.203175,
+    "matched_total_new_input_tokens": true,
+    "matched_total_output_tokens": true,
+    "matched_total_requests": true
+  },
+  "parameters": {
+    "dag_final_history_parent": 13,
+    "dag_requests": 15,
+    "dag_sessions": 10,
+    "fresh_input_tokens": 500,
+    "linear_requests": 5,
+    "linear_sessions": 30,
+    "output_tokens": 300,
+    "wait_after_ready_s": 0.0
+  },
+  "topologies": {
+    "dag": [
+      {
+        "history_parent": null,
+        "node_id": 0,
+        "parent_nodes": [],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 0,
+        "node_id": 1,
+        "parent_nodes": [
+          0
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 1,
+        "node_id": 2,
+        "parent_nodes": [
+          1
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 1,
+        "node_id": 3,
+        "parent_nodes": [
+          1
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 1,
+        "node_id": 4,
+        "parent_nodes": [
+          1
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 2,
+        "node_id": 5,
+        "parent_nodes": [
+          2
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 2,
+        "node_id": 6,
+        "parent_nodes": [
+          2
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 2,
+        "node_id": 7,
+        "parent_nodes": [
+          2
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 3,
+        "node_id": 8,
+        "parent_nodes": [
+          3
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 3,
+        "node_id": 9,
+        "parent_nodes": [
+          3
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 3,
+        "node_id": 10,
+        "parent_nodes": [
+          3
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 4,
+        "node_id": 11,
+        "parent_nodes": [
+          4
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 4,
+        "node_id": 12,
+        "parent_nodes": [
+          4
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 4,
+        "node_id": 13,
+        "parent_nodes": [
+          4
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 13,
+        "node_id": 14,
+        "parent_nodes": [
+          1,
+          7,
+          10,
+          13
+        ],
+        "wait_after_ready": 0.0
+      }
+    ],
+    "linear": [
+      {
+        "history_parent": null,
+        "node_id": 0,
+        "parent_nodes": [],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 0,
+        "node_id": 1,
+        "parent_nodes": [
+          0
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 1,
+        "node_id": 2,
+        "parent_nodes": [
+          1
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 2,
+        "node_id": 3,
+        "parent_nodes": [
+          2
+        ],
+        "wait_after_ready": 0.0
+      },
+      {
+        "history_parent": 3,
+        "node_id": 4,
+        "parent_nodes": [
+          3
+        ],
+        "wait_after_ready": 0.0
+      }
+    ]
+  },
+  "workloads": {
+    "dag": {
+      "average_effective_input_tokens": 2526.667,
+      "fresh_input_tokens_per_session": 7500,
+      "max_effective_input_tokens": 3700,
+      "min_effective_input_tokens": 500,
+      "output_tokens_per_session": 4500,
+      "requests_per_session": 15,
+      "sessions": 10,
+      "total_cacheable_history_tokens": 304000,
+      "total_effective_input_tokens": 379000,
+      "total_new_input_tokens": 75000,
+      "total_output_tokens": 45000,
+      "total_requests": 150
+    },
+    "linear": {
+      "average_effective_input_tokens": 2100.0,
+      "fresh_input_tokens_per_session": 2500,
+      "max_effective_input_tokens": 3700,
+      "min_effective_input_tokens": 500,
+      "output_tokens_per_session": 1500,
+      "requests_per_session": 5,
+      "sessions": 30,
+      "total_cacheable_history_tokens": 240000,
+      "total_effective_input_tokens": 315000,
+      "total_new_input_tokens": 75000,
+      "total_output_tokens": 45000,
+      "total_requests": 150
+    }
+  }
+}

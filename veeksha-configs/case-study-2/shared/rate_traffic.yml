@@ -1,0 +1,5 @@
+type: rate
+interval_generator:
+  type: poisson
+  arrival_rate: 0.18
+cancel_session_on_failure: false

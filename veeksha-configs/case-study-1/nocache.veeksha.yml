@@ -1,0 +1,63 @@
+# Q: how are sessions dispatched to the inference system?
+traffic_scheduler:
+  type: concurrent # with a concurrency-based scheduler...
+  target_concurrent_sessions: 1 # ...that allows one session at a time
+  rampup_seconds: 0
+  
+seed: 77 # seeded run!
+
+# Q: how are sessions generated?
+session_generator:
+  type: synthetic # synthetically, with a linear (chain) shape
+  session_graph:
+    type: linear
+    num_request_generator: # each session has between 100 and 150 turns
+      type: uniform
+      min: 110
+      max: 150
+    request_wait_generator:
+      type: poisson
+      arrival_rate: 31.25 # turns wait a mean of 32ms before being dispatched
+  channels: # each turn introduces between 1200 and 1800 new tokens from the user...
+    - type: text
+      body_length_generator:
+        type: uniform
+        min: 400
+        max: 600
+  output_spec: # ... and 150 to 250 new tokens from the assistant
+    text:
+      output_length_generator:
+        type: uniform
+        min: 150
+        max: 250
+
+client:
+  type: openai_chat_completions
+  api_base: http://localhost:8001/v1
+  model: Qwen/Qwen3.5-35B-A3B
+
+# We dispatch 5 sessions in total and average values
+runtime:
+  max_sessions: 5
+  benchmark_timeout: -1
+
+evaluators:
+  - type: performance
+    target_channels: ["text"]
+
+# Auto-managed server
+server:
+  type: vllm
+  env_path: ../vllm_mamba_env
+  model: Qwen/Qwen3.5-35B-A3B
+  host: localhost
+  port: 8002
+  tensor_parallel_size: 1
+  dtype: bfloat16
+  startup_timeout: 600
+  health_check_interval: 2.0
+  require_contiguous_gpus: true
+  additional_args:
+    enable-prefix-caching: true
+    language-model-only: true
+    attention-config: '{"backend":"FLASH_ATTN","flash_attn_version":3,"disable_flashinfer_prefill":true,"use_trtllm_ragged_deepseek_prefill":false}'

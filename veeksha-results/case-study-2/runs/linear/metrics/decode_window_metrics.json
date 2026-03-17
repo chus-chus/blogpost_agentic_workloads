@@ -1,0 +1,151 @@
+{
+  "config": {
+    "min_active_requests": "max_observed",
+    "resolved_min_active_requests": 6,
+    "selection_strategy": "all",
+    "anchor_to_client_pickup": true,
+    "require_streaming": true
+  },
+  "eligible_requests": {
+    "total_request_rows": 299,
+    "eligible": 299,
+    "skipped": {
+      "non_stream": 0,
+      "missing_anchor": 0,
+      "no_decode_chunks": 0,
+      "empty": 0
+    }
+  },
+  "windows": {
+    "num_candidate_segments": 11,
+    "num_selected_segments": 11,
+    "total_duration_s": 8.020440949248183,
+    "per_window": [
+      {
+        "window_index": 0,
+        "start": 172.49935009144068,
+        "end": 173.91422046504795,
+        "duration_s": 1.4148703736072719,
+        "tbc_count": 918,
+        "tbc_mean": 0.009340488384345907,
+        "tbc_median": 0.009194568730890751,
+        "tbc_p99": 0.011393977794796253
+      },
+      {
+        "window_index": 1,
+        "start": 175.15936042959808,
+        "end": 175.43885699702977,
+        "duration_s": 0.2794965674316927,
+        "tbc_count": 187,
+        "tbc_mean": 0.008964312118403414,
+        "tbc_median": 0.009035088121891022,
+        "tbc_p99": 0.01072641037404537
+      },
+      {
+        "window_index": 2,
+        "start": 175.65105590606987,
+        "end": 177.35801015114845,
+        "duration_s": 1.7069542450785775,
+        "tbc_count": 1112,
+        "tbc_mean": 0.009230702743604243,
+        "tbc_median": 0.009212545119225979,
+        "tbc_p99": 0.011424058973789246
+      },
+      {
+        "window_index": 3,
+        "start": 277.38307978981135,
+        "end": 277.8248654138511,
+        "duration_s": 0.44178562403976684,
+        "tbc_count": 278,
+        "tbc_mean": 0.00977377553316329,
+        "tbc_median": 0.009364604949951172,
+        "tbc_p99": 0.0289837546274066
+      },
+      {
+        "window_index": 4,
+        "start": 278.90943813036324,
+        "end": 279.49288684008957,
+        "duration_s": 0.5834487097263263,
+        "tbc_count": 381,
+        "tbc_mean": 0.00911623263961374,
+        "tbc_median": 0.009171398356556892,
+        "tbc_p99": 0.010845473036170002
+      },
+      {
+        "window_index": 5,
+        "start": 279.7056071063924,
+        "end": 280.40400155470667,
+        "duration_s": 0.698394448314275,
+        "tbc_count": 450,
+        "tbc_mean": 0.009350311598843999,
+        "tbc_median": 0.009308070875704288,
+        "tbc_p99": 0.010627249963581562
+      },
+      {
+        "window_index": 6,
+        "start": 280.547454819963,
+        "end": 281.6031750485027,
+        "duration_s": 1.0557202285397125,
+        "tbc_count": 672,
+        "tbc_mean": 0.009396612256144484,
+        "tbc_median": 0.009186213836073875,
+        "tbc_p99": 0.01873575564473867
+      },
+      {
+        "window_index": 7,
+        "start": 281.746713528347,
+        "end": 281.9085056957895,
+        "duration_s": 0.1617921674424565,
+        "tbc_count": 105,
+        "tbc_mean": 0.009126239234492892,
+        "tbc_median": 0.009255629032850266,
+        "tbc_p99": 0.010500541776418685
+      },
+      {
+        "window_index": 8,
+        "start": 282.09078705575166,
+        "end": 282.65628433890345,
+        "duration_s": 0.5654972831517853,
+        "tbc_count": 370,
+        "tbc_mean": 0.009210147426740544,
+        "tbc_median": 0.009146450087428093,
+        "tbc_p99": 0.01131978787481785
+      },
+      {
+        "window_index": 9,
+        "start": 286.79188810551165,
+        "end": 287.6910596790773,
+        "duration_s": 0.8991715735656385,
+        "tbc_count": 581,
+        "tbc_mean": 0.009249046079416899,
+        "tbc_median": 0.009253930300474167,
+        "tbc_p99": 0.010743116214871408
+      },
+      {
+        "window_index": 10,
+        "start": 287.8515889967376,
+        "end": 288.06489872508826,
+        "duration_s": 0.21330972835067996,
+        "tbc_count": 138,
+        "tbc_mean": 0.009204020548233952,
+        "tbc_median": 0.009412229992449284,
+        "tbc_p99": 0.010780961140990256
+      }
+    ]
+  },
+  "tbc_in_window_stats": {
+    "count": 5192,
+    "mean": 0.009290803990503329,
+    "median": 0.009215484373271465,
+    "std": 0.0017888797135157165,
+    "min": 7.25090503692627e-05,
+    "max": 0.0706790741533041,
+    "p90": 0.009964838251471519,
+    "p99": 0.011121919192373757
+  },
+  "notes": [
+    "Times are relative to the benchmark's request-level time reference.",
+    "Decode interval is approximated using TTFC and total stream duration.",
+    "TBC samples are included based on chunk-arrival time within the window(s)."
+  ]
+}

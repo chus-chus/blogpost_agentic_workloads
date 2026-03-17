@@ -1,0 +1,71 @@
+{
+  "config": {
+    "min_active_requests": "max_observed",
+    "resolved_min_active_requests": 99,
+    "selection_strategy": "all",
+    "anchor_to_client_pickup": true,
+    "require_streaming": true
+  },
+  "eligible_requests": {
+    "total_request_rows": 2028,
+    "eligible": 2028,
+    "skipped": {
+      "non_stream": 0,
+      "missing_anchor": 0,
+      "no_decode_chunks": 0,
+      "empty": 0
+    }
+  },
+  "windows": {
+    "num_candidate_segments": 3,
+    "num_selected_segments": 3,
+    "total_duration_s": 1.6519235680591464,
+    "per_window": [
+      {
+        "window_index": 0,
+        "start": 290.6821427017075,
+        "end": 290.86485116082133,
+        "duration_s": 0.18270845911382594,
+        "tbc_count": 755,
+        "tbc_mean": 0.02433075246382628,
+        "tbc_median": 0.02632291056215763,
+        "tbc_p99": 0.10839038915932406
+      },
+      {
+        "window_index": 1,
+        "start": 290.95974589690866,
+        "end": 291.09096404853284,
+        "duration_s": 0.13121815162418216,
+        "tbc_count": 548,
+        "tbc_mean": 0.023900274384467707,
+        "tbc_median": 0.025817347690463066,
+        "tbc_p99": 0.028149195183068514
+      },
+      {
+        "window_index": 2,
+        "start": 294.9061343685019,
+        "end": 296.24413132582305,
+        "duration_s": 1.3379969573211383,
+        "tbc_count": 4786,
+        "tbc_mean": 0.027488833710526354,
+        "tbc_median": 0.02718657348304987,
+        "tbc_p99": 0.029918389022350302
+      }
+    ]
+  },
+  "tbc_in_window_stats": {
+    "count": 6089,
+    "mean": 0.026774285861628555,
+    "median": 0.027122225612401962,
+    "std": 0.007124289564647417,
+    "min": 0.005290307104587555,
+    "max": 0.1645485833287239,
+    "p90": 0.028307193517684938,
+    "p99": 0.03137079924345016
+  },
+  "notes": [
+    "Times are relative to the benchmark's request-level time reference.",
+    "Decode interval is approximated using TTFC and total stream duration.",
+    "TBC samples are included based on chunk-arrival time within the window(s)."
+  ]
+}

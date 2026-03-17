@@ -1,0 +1,4866 @@
+{
+  "stats": {
+    "num_sessions": 1,
+    "num_nodes": 129,
+    "num_edges": 128,
+    "triggers": {
+      "user": 4,
+      "tool_result": 125
+    },
+    "stop_reasons": {
+      "toolUse": 126,
+      "stop": 3
+    },
+    "edge_types": {
+      "sequential": 128
+    },
+    "tokens": {
+      "total_input": 856658,
+      "total_output": 79298,
+      "total_cache_read": 8212352,
+      "total_cache_write": 0,
+      "total": 9148308,
+      "max_context_length": 117247
+    },
+    "new_tokens": {
+      "min": 27,
+      "max": 17301,
+      "mean": 814.9,
+      "median": 259,
+      "p95": 3091,
+      "sum": 105125,
+      "count": 129
+    },
+    "output_tokens": {
+      "min": 26,
+      "max": 13909,
+      "mean": 614.7,
+      "median": 211,
+      "p95": 2938,
+      "sum": 79298,
+      "count": 129
+    },
+    "wait_after_ready_ms": {
+      "min": 7,
+      "max": 120065,
+      "mean": 3098.9,
+      "median": 32.0,
+      "p95": 10077,
+      "sum": 396653,
+      "count": 128
+    },
+    "inference_ms": {
+      "min": 1029,
+      "max": 95829,
+      "mean": 6990.1,
+      "median": 4004,
+      "p95": 21980,
+      "sum": 901717,
+      "count": 129
+    },
+    "fan_out": {
+      "min": 0,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1,
+      "p95": 1,
+      "sum": 128,
+      "count": 129
+    },
+    "fan_in": {
+      "min": 0,
+      "max": 1,
+      "mean": 1.0,
+      "median": 1,
+      "p95": 1,
+      "sum": 128,
+      "count": 129
+    },
+    "wall_time_s": 1298.37,
+    "total_inference_ms": 901717
+  },
+  "sessions": {
+    "3bd5ba52-55dd-416d-b017-06e655180e43": {
+      "session_key": "agent:main:main",
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "spawned_by": null,
+      "label": null,
+      "file": "chus/blog_inference_eval/session_parsing/1-long-context/dag-3bd5ba52-main/3bd5ba52-55dd-416d-b017-06e655180e43.jsonl.reset.2026-03-04T16-16-39.082Z",
+      "max_context_length": 117247,
+      "num_nodes": 129,
+      "wall_time_s": 1298.37
+    }
+  },
+  "nodes": [
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:0f731694",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "0f731694",
+      "timestamp_dispatched": "2026-03-04T11:25:01.060Z",
+      "timestamp_responded": "2026-03-04T11:25:02.959Z",
+      "inference_ms": 1899,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "user",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 9050,
+        "output": 153,
+        "cache_read": 1664,
+        "cache_write": 0,
+        "total_tokens": 10867
+      },
+      "new_tokens": {
+        "from_tool_results": 0,
+        "from_user_input": 151,
+        "from_previous_assistant": 0,
+        "from_injected": 10563,
+        "other": 0,
+        "total": 10714
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": null
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:1fb969b2",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "1fb969b2",
+      "timestamp_dispatched": "2026-03-04T11:25:03.001Z",
+      "timestamp_responded": "2026-03-04T11:25:04.423Z",
+      "inference_ms": 1422,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 9274,
+        "output": 31,
+        "cache_read": 1664,
+        "cache_write": 0,
+        "total_tokens": 10969
+      },
+      "new_tokens": {
+        "from_tool_results": 64,
+        "from_user_input": 0,
+        "from_previous_assistant": 15,
+        "from_injected": 0,
+        "other": 0,
+        "total": 79
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 42
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:5a4e4672",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "5a4e4672",
+      "timestamp_dispatched": "2026-03-04T11:25:04.465Z",
+      "timestamp_responded": "2026-03-04T11:25:06.091Z",
+      "inference_ms": 1626,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 272,
+        "output": 54,
+        "cache_read": 10880,
+        "cache_write": 0,
+        "total_tokens": 11206
+      },
+      "new_tokens": {
+        "from_tool_results": 176,
+        "from_user_input": 0,
+        "from_previous_assistant": 14,
+        "from_injected": 0,
+        "other": 0,
+        "total": 190
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 42
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4b2c9091",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4b2c9091",
+      "timestamp_dispatched": "2026-03-04T11:25:06.121Z",
+      "timestamp_responded": "2026-03-04T11:25:10.643Z",
+      "inference_ms": 4522,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 3149,
+        "output": 218,
+        "cache_read": 11136,
+        "cache_write": 0,
+        "total_tokens": 14503
+      },
+      "new_tokens": {
+        "from_tool_results": 3072,
+        "from_user_input": 0,
+        "from_previous_assistant": 26,
+        "from_injected": 0,
+        "other": 0,
+        "total": 3098
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 30
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:b82bd11c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "b82bd11c",
+      "timestamp_dispatched": "2026-03-04T11:25:10.664Z",
+      "timestamp_responded": "2026-03-04T11:25:11.926Z",
+      "inference_ms": 1262,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 94,
+        "output": 39,
+        "cache_read": 14464,
+        "cache_write": 0,
+        "total_tokens": 14597
+      },
+      "new_tokens": {
+        "from_tool_results": 48,
+        "from_user_input": 0,
+        "from_previous_assistant": 28,
+        "from_injected": 0,
+        "other": 0,
+        "total": 76
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 21
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:58e88d6c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "58e88d6c",
+      "timestamp_dispatched": "2026-03-04T11:25:12.003Z",
+      "timestamp_responded": "2026-03-04T11:25:17.539Z",
+      "inference_ms": 5536,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 187,
+        "output": 595,
+        "cache_read": 14464,
+        "cache_write": 0,
+        "total_tokens": 15246
+      },
+      "new_tokens": {
+        "from_tool_results": 47,
+        "from_user_input": 0,
+        "from_previous_assistant": 16,
+        "from_injected": 0,
+        "other": 0,
+        "total": 63
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 77
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:2b91392b",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "2b91392b",
+      "timestamp_dispatched": "2026-03-04T11:25:17.585Z",
+      "timestamp_responded": "2026-03-04T11:25:18.614Z",
+      "inference_ms": 1029,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 208,
+        "output": 38,
+        "cache_read": 15104,
+        "cache_write": 0,
+        "total_tokens": 15350
+      },
+      "new_tokens": {
+        "from_tool_results": 59,
+        "from_user_input": 0,
+        "from_previous_assistant": 23,
+        "from_injected": 0,
+        "other": 0,
+        "total": 82
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 46
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:522ee836",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "522ee836",
+      "timestamp_dispatched": "2026-03-04T11:25:18.635Z",
+      "timestamp_responded": "2026-03-04T11:25:24.962Z",
+      "inference_ms": 6327,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 439,
+        "output": 320,
+        "cache_read": 15232,
+        "cache_write": 0,
+        "total_tokens": 15991
+      },
+      "new_tokens": {
+        "from_tool_results": 314,
+        "from_user_input": 0,
+        "from_previous_assistant": 21,
+        "from_injected": 0,
+        "other": 0,
+        "total": 335
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 21
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:b19b89bd",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "b19b89bd",
+      "timestamp_dispatched": "2026-03-04T11:25:25.017Z",
+      "timestamp_responded": "2026-03-04T11:25:27.048Z",
+      "inference_ms": 2031,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 147,
+        "output": 47,
+        "cache_read": 15872,
+        "cache_write": 0,
+        "total_tokens": 16066
+      },
+      "new_tokens": {
+        "from_tool_results": 21,
+        "from_user_input": 0,
+        "from_previous_assistant": 91,
+        "from_injected": 0,
+        "other": 0,
+        "total": 112
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 55
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:ef62cae8",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "ef62cae8",
+      "timestamp_dispatched": "2026-03-04T11:25:27.074Z",
+      "timestamp_responded": "2026-03-04T11:25:29.623Z",
+      "inference_ms": 2549,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 6774,
+        "output": 48,
+        "cache_read": 10752,
+        "cache_write": 0,
+        "total_tokens": 17574
+      },
+      "new_tokens": {
+        "from_tool_results": 1453,
+        "from_user_input": 0,
+        "from_previous_assistant": 23,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1476
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 26
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:d894fb65",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "d894fb65",
+      "timestamp_dispatched": "2026-03-04T11:25:29.644Z",
+      "timestamp_responded": "2026-03-04T11:25:30.860Z",
+      "inference_ms": 1216,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 311,
+        "output": 40,
+        "cache_read": 17536,
+        "cache_write": 0,
+        "total_tokens": 17887
+      },
+      "new_tokens": {
+        "from_tool_results": 266,
+        "from_user_input": 0,
+        "from_previous_assistant": 24,
+        "from_injected": 0,
+        "other": 0,
+        "total": 290
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 21
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:ba3eeec0",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "ba3eeec0",
+      "timestamp_dispatched": "2026-03-04T11:25:30.869Z",
+      "timestamp_responded": "2026-03-04T11:25:32.249Z",
+      "inference_ms": 1380,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 373,
+        "output": 59,
+        "cache_read": 17792,
+        "cache_write": 0,
+        "total_tokens": 18224
+      },
+      "new_tokens": {
+        "from_tool_results": 271,
+        "from_user_input": 0,
+        "from_previous_assistant": 26,
+        "from_injected": 0,
+        "other": 0,
+        "total": 297
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 9
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:95843b1b",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "95843b1b",
+      "timestamp_dispatched": "2026-03-04T11:25:32.263Z",
+      "timestamp_responded": "2026-03-04T11:25:51.319Z",
+      "inference_ms": 19056,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "stop",
+      "usage": {
+        "input": 479,
+        "output": 2475,
+        "cache_read": 18176,
+        "cache_write": 0,
+        "total_tokens": 21130
+      },
+      "new_tokens": {
+        "from_tool_results": 424,
+        "from_user_input": 0,
+        "from_previous_assistant": 20,
+        "from_injected": 0,
+        "other": 0,
+        "total": 444
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 14
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:96e14d12",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "96e14d12",
+      "timestamp_dispatched": "2026-03-04T11:26:01.396Z",
+      "timestamp_responded": "2026-03-04T11:26:04.378Z",
+      "inference_ms": 2982,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "user",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 16243,
+        "output": 240,
+        "cache_read": 1664,
+        "cache_write": 0,
+        "total_tokens": 18147
+      },
+      "new_tokens": {
+        "from_tool_results": 0,
+        "from_user_input": 80,
+        "from_previous_assistant": 1092,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1172
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 10077
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:d428b454",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "d428b454",
+      "timestamp_dispatched": "2026-03-04T11:26:04.445Z",
+      "timestamp_responded": "2026-03-04T11:26:19.821Z",
+      "inference_ms": 15376,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 108,
+        "output": 988,
+        "cache_read": 18048,
+        "cache_write": 0,
+        "total_tokens": 19144
+      },
+      "new_tokens": {
+        "from_tool_results": 2,
+        "from_user_input": 0,
+        "from_previous_assistant": 26,
+        "from_injected": 0,
+        "other": 0,
+        "total": 28
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 67
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:5923192a",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "5923192a",
+      "timestamp_dispatched": "2026-03-04T11:26:19.845Z",
+      "timestamp_responded": "2026-03-04T11:26:30.699Z",
+      "inference_ms": 10854,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 3027,
+        "output": 1213,
+        "cache_read": 18048,
+        "cache_write": 0,
+        "total_tokens": 22288
+      },
+      "new_tokens": {
+        "from_tool_results": 1924,
+        "from_user_input": 0,
+        "from_previous_assistant": 111,
+        "from_injected": 0,
+        "other": 0,
+        "total": 2035
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 24
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:dc8ed0f8",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "dc8ed0f8",
+      "timestamp_dispatched": "2026-03-04T11:26:30.727Z",
+      "timestamp_responded": "2026-03-04T11:26:32.833Z",
+      "inference_ms": 2106,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 286,
+        "output": 178,
+        "cache_read": 22144,
+        "cache_write": 0,
+        "total_tokens": 22608
+      },
+      "new_tokens": {
+        "from_tool_results": 135,
+        "from_user_input": 0,
+        "from_previous_assistant": 108,
+        "from_injected": 0,
+        "other": 0,
+        "total": 243
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 28
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:00a11c09",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "00a11c09",
+      "timestamp_dispatched": "2026-03-04T11:26:32.856Z",
+      "timestamp_responded": "2026-03-04T11:26:35.164Z",
+      "inference_ms": 2308,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 231,
+        "output": 176,
+        "cache_read": 22400,
+        "cache_write": 0,
+        "total_tokens": 22807
+      },
+      "new_tokens": {
+        "from_tool_results": 16,
+        "from_user_input": 0,
+        "from_previous_assistant": 115,
+        "from_injected": 0,
+        "other": 0,
+        "total": 131
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 23
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:93738250",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "93738250",
+      "timestamp_dispatched": "2026-03-04T11:26:35.179Z",
+      "timestamp_responded": "2026-03-04T11:26:52.970Z",
+      "inference_ms": 17791,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 176,
+        "output": 2938,
+        "cache_read": 22656,
+        "cache_write": 0,
+        "total_tokens": 25770
+      },
+      "new_tokens": {
+        "from_tool_results": 18,
+        "from_user_input": 0,
+        "from_previous_assistant": 153,
+        "from_injected": 0,
+        "other": 0,
+        "total": 171
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 15
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:0de431bd",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "0de431bd",
+      "timestamp_dispatched": "2026-03-04T11:26:53.002Z",
+      "timestamp_responded": "2026-03-04T11:27:24.599Z",
+      "inference_ms": 31597,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 2626,
+        "output": 5011,
+        "cache_read": 23168,
+        "cache_write": 0,
+        "total_tokens": 30805
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 1982,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1999
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 32
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4b741b73",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4b741b73",
+      "timestamp_dispatched": "2026-03-04T11:27:24.632Z",
+      "timestamp_responded": "2026-03-04T11:27:36.908Z",
+      "inference_ms": 12276,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1392,
+        "output": 464,
+        "cache_read": 29440,
+        "cache_write": 0,
+        "total_tokens": 31296
+      },
+      "new_tokens": {
+        "from_tool_results": 20,
+        "from_user_input": 0,
+        "from_previous_assistant": 709,
+        "from_injected": 0,
+        "other": 0,
+        "total": 729
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 33
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:ea779e40",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "ea779e40",
+      "timestamp_dispatched": "2026-03-04T11:27:36.932Z",
+      "timestamp_responded": "2026-03-04T11:27:40.831Z",
+      "inference_ms": 3899,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 859,
+        "output": 385,
+        "cache_read": 30464,
+        "cache_write": 0,
+        "total_tokens": 31708
+      },
+      "new_tokens": {
+        "from_tool_results": 20,
+        "from_user_input": 0,
+        "from_previous_assistant": 439,
+        "from_injected": 0,
+        "other": 0,
+        "total": 459
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 24
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:ef186da8",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "ef186da8",
+      "timestamp_dispatched": "2026-03-04T11:27:40.849Z",
+      "timestamp_responded": "2026-03-04T11:27:43.966Z",
+      "inference_ms": 3117,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 502,
+        "output": 325,
+        "cache_read": 31232,
+        "cache_write": 0,
+        "total_tokens": 32059
+      },
+      "new_tokens": {
+        "from_tool_results": 19,
+        "from_user_input": 0,
+        "from_previous_assistant": 371,
+        "from_injected": 0,
+        "other": 0,
+        "total": 390
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 18
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:a8e63153",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "a8e63153",
+      "timestamp_dispatched": "2026-03-04T11:27:43.990Z",
+      "timestamp_responded": "2026-03-04T11:28:04.825Z",
+      "inference_ms": 20835,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 596,
+        "output": 2935,
+        "cache_read": 31488,
+        "cache_write": 0,
+        "total_tokens": 35019
+      },
+      "new_tokens": {
+        "from_tool_results": 18,
+        "from_user_input": 0,
+        "from_previous_assistant": 310,
+        "from_injected": 0,
+        "other": 0,
+        "total": 328
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 24
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:98841359",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "98841359",
+      "timestamp_dispatched": "2026-03-04T11:28:04.869Z",
+      "timestamp_responded": "2026-03-04T11:28:08.708Z",
+      "inference_ms": 3839,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 3552,
+        "output": 475,
+        "cache_read": 31488,
+        "cache_write": 0,
+        "total_tokens": 35515
+      },
+      "new_tokens": {
+        "from_tool_results": 14,
+        "from_user_input": 0,
+        "from_previous_assistant": 2903,
+        "from_injected": 0,
+        "other": 0,
+        "total": 2917
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 44
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:ecb33d48",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "ecb33d48",
+      "timestamp_dispatched": "2026-03-04T11:28:08.729Z",
+      "timestamp_responded": "2026-03-04T11:28:11.516Z",
+      "inference_ms": 2787,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 208,
+        "output": 112,
+        "cache_read": 35328,
+        "cache_write": 0,
+        "total_tokens": 35648
+      },
+      "new_tokens": {
+        "from_tool_results": 14,
+        "from_user_input": 0,
+        "from_previous_assistant": 111,
+        "from_injected": 0,
+        "other": 0,
+        "total": 125
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 21
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:ef7b7106",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "ef7b7106",
+      "timestamp_dispatched": "2026-03-04T11:28:11.533Z",
+      "timestamp_responded": "2026-03-04T11:28:14.240Z",
+      "inference_ms": 2707,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 213,
+        "output": 316,
+        "cache_read": 35456,
+        "cache_write": 0,
+        "total_tokens": 35985
+      },
+      "new_tokens": {
+        "from_tool_results": 14,
+        "from_user_input": 0,
+        "from_previous_assistant": 79,
+        "from_injected": 0,
+        "other": 0,
+        "total": 93
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 17
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:0a00c04b",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "0a00c04b",
+      "timestamp_dispatched": "2026-03-04T11:28:14.263Z",
+      "timestamp_responded": "2026-03-04T11:28:17.924Z",
+      "inference_ms": 3661,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 550,
+        "output": 175,
+        "cache_read": 35456,
+        "cache_write": 0,
+        "total_tokens": 36181
+      },
+      "new_tokens": {
+        "from_tool_results": 14,
+        "from_user_input": 0,
+        "from_previous_assistant": 116,
+        "from_injected": 0,
+        "other": 0,
+        "total": 130
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 23
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:8495b1d9",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "8495b1d9",
+      "timestamp_dispatched": "2026-03-04T11:28:17.958Z",
+      "timestamp_responded": "2026-03-04T11:28:19.752Z",
+      "inference_ms": 1794,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 783,
+        "output": 55,
+        "cache_read": 35456,
+        "cache_write": 0,
+        "total_tokens": 36294
+      },
+      "new_tokens": {
+        "from_tool_results": 51,
+        "from_user_input": 0,
+        "from_previous_assistant": 161,
+        "from_injected": 0,
+        "other": 0,
+        "total": 212
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 34
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:8aa8de1b",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "8aa8de1b",
+      "timestamp_dispatched": "2026-03-04T11:28:19.772Z",
+      "timestamp_responded": "2026-03-04T11:28:21.606Z",
+      "inference_ms": 1834,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1111,
+        "output": 178,
+        "cache_read": 36224,
+        "cache_write": 0,
+        "total_tokens": 37513
+      },
+      "new_tokens": {
+        "from_tool_results": 1034,
+        "from_user_input": 0,
+        "from_previous_assistant": 34,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1068
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 20
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:6ac39d0f",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "6ac39d0f",
+      "timestamp_dispatched": "2026-03-04T11:28:21.629Z",
+      "timestamp_responded": "2026-03-04T11:28:43.609Z",
+      "inference_ms": 21980,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 926,
+        "output": 3405,
+        "cache_read": 36608,
+        "cache_write": 0,
+        "total_tokens": 40939
+      },
+      "new_tokens": {
+        "from_tool_results": 14,
+        "from_user_input": 0,
+        "from_previous_assistant": 159,
+        "from_injected": 0,
+        "other": 0,
+        "total": 173
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 23
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:2a84b1b1",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "2a84b1b1",
+      "timestamp_dispatched": "2026-03-04T11:28:43.639Z",
+      "timestamp_responded": "2026-03-04T11:28:58.256Z",
+      "inference_ms": 14617,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 3327,
+        "output": 497,
+        "cache_read": 37632,
+        "cache_write": 0,
+        "total_tokens": 41456
+      },
+      "new_tokens": {
+        "from_tool_results": 13,
+        "from_user_input": 0,
+        "from_previous_assistant": 3078,
+        "from_injected": 0,
+        "other": 0,
+        "total": 3091
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 30
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:f9b111ae",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "f9b111ae",
+      "timestamp_dispatched": "2026-03-04T11:29:00.303Z",
+      "timestamp_responded": "2026-03-04T11:29:02.615Z",
+      "inference_ms": 2312,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 415,
+        "output": 179,
+        "cache_read": 41344,
+        "cache_write": 0,
+        "total_tokens": 41938
+      },
+      "new_tokens": {
+        "from_tool_results": 296,
+        "from_user_input": 0,
+        "from_previous_assistant": 34,
+        "from_injected": 0,
+        "other": 0,
+        "total": 330
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 2047
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:f0788edf",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "f0788edf",
+      "timestamp_dispatched": "2026-03-04T11:29:03.860Z",
+      "timestamp_responded": "2026-03-04T11:29:06.103Z",
+      "inference_ms": 2243,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 147,
+        "output": 194,
+        "cache_read": 41856,
+        "cache_write": 0,
+        "total_tokens": 42197
+      },
+      "new_tokens": {
+        "from_tool_results": 58,
+        "from_user_input": 0,
+        "from_previous_assistant": 32,
+        "from_injected": 0,
+        "other": 0,
+        "total": 90
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1245
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:18475a17",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "18475a17",
+      "timestamp_dispatched": "2026-03-04T11:29:06.121Z",
+      "timestamp_responded": "2026-03-04T11:29:07.487Z",
+      "inference_ms": 1366,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 235,
+        "output": 43,
+        "cache_read": 41984,
+        "cache_write": 0,
+        "total_tokens": 42262
+      },
+      "new_tokens": {
+        "from_tool_results": 15,
+        "from_user_input": 0,
+        "from_previous_assistant": 92,
+        "from_injected": 0,
+        "other": 0,
+        "total": 107
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 18
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:b96cf280",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "b96cf280",
+      "timestamp_dispatched": "2026-03-04T11:29:09.771Z",
+      "timestamp_responded": "2026-03-04T11:29:11.181Z",
+      "inference_ms": 1410,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 293,
+        "output": 39,
+        "cache_read": 42112,
+        "cache_write": 0,
+        "total_tokens": 42444
+      },
+      "new_tokens": {
+        "from_tool_results": 136,
+        "from_user_input": 0,
+        "from_previous_assistant": 31,
+        "from_injected": 0,
+        "other": 0,
+        "total": 167
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 2284
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:fcf8e85c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "fcf8e85c",
+      "timestamp_dispatched": "2026-03-04T11:29:11.229Z",
+      "timestamp_responded": "2026-03-04T11:29:15.233Z",
+      "inference_ms": 4004,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 153,
+        "output": 249,
+        "cache_read": 42368,
+        "cache_write": 0,
+        "total_tokens": 42770
+      },
+      "new_tokens": {
+        "from_tool_results": 70,
+        "from_user_input": 0,
+        "from_previous_assistant": 23,
+        "from_injected": 0,
+        "other": 0,
+        "total": 93
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 48
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:dba59e35",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "dba59e35",
+      "timestamp_dispatched": "2026-03-04T11:29:15.334Z",
+      "timestamp_responded": "2026-03-04T11:29:19.037Z",
+      "inference_ms": 3703,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "stop",
+      "usage": {
+        "input": 184,
+        "output": 476,
+        "cache_read": 42624,
+        "cache_write": 0,
+        "total_tokens": 43284
+      },
+      "new_tokens": {
+        "from_tool_results": 30,
+        "from_user_input": 0,
+        "from_previous_assistant": 24,
+        "from_injected": 0,
+        "other": 0,
+        "total": 54
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 101
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:aa2392ed",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "aa2392ed",
+      "timestamp_dispatched": "2026-03-04T11:29:39.831Z",
+      "timestamp_responded": "2026-03-04T11:30:09.196Z",
+      "inference_ms": 29365,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "user",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 26485,
+        "output": 3629,
+        "cache_read": 6784,
+        "cache_write": 0,
+        "total_tokens": 36898
+      },
+      "new_tokens": {
+        "from_tool_results": 0,
+        "from_user_input": 81,
+        "from_previous_assistant": 232,
+        "from_injected": 0,
+        "other": 0,
+        "total": 313
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 20794
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:f10a0415",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "f10a0415",
+      "timestamp_dispatched": "2026-03-04T11:30:18.796Z",
+      "timestamp_responded": "2026-03-04T11:30:25.900Z",
+      "inference_ms": 7104,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 35307,
+        "output": 106,
+        "cache_read": 1664,
+        "cache_write": 0,
+        "total_tokens": 37077
+      },
+      "new_tokens": {
+        "from_tool_results": 66,
+        "from_user_input": 0,
+        "from_previous_assistant": 165,
+        "from_injected": 0,
+        "other": 0,
+        "total": 231
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 9600
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:3abf19e0",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "3abf19e0",
+      "timestamp_dispatched": "2026-03-04T11:30:25.914Z",
+      "timestamp_responded": "2026-03-04T11:30:29.656Z",
+      "inference_ms": 3742,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 541,
+        "output": 80,
+        "cache_read": 36608,
+        "cache_write": 0,
+        "total_tokens": 37229
+      },
+      "new_tokens": {
+        "from_tool_results": 65,
+        "from_user_input": 0,
+        "from_previous_assistant": 46,
+        "from_injected": 0,
+        "other": 0,
+        "total": 111
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 14
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:b319508a",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "b319508a",
+      "timestamp_dispatched": "2026-03-04T11:30:29.677Z",
+      "timestamp_responded": "2026-03-04T11:30:31.357Z",
+      "inference_ms": 1680,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 513,
+        "output": 56,
+        "cache_read": 36736,
+        "cache_write": 0,
+        "total_tokens": 37305
+      },
+      "new_tokens": {
+        "from_tool_results": 13,
+        "from_user_input": 0,
+        "from_previous_assistant": 30,
+        "from_injected": 0,
+        "other": 0,
+        "total": 43
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 21
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:04793a3a",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "04793a3a",
+      "timestamp_dispatched": "2026-03-04T11:30:31.389Z",
+      "timestamp_responded": "2026-03-04T11:30:33.853Z",
+      "inference_ms": 2464,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 243,
+        "output": 68,
+        "cache_read": 37120,
+        "cache_write": 0,
+        "total_tokens": 37431
+      },
+      "new_tokens": {
+        "from_tool_results": 51,
+        "from_user_input": 0,
+        "from_previous_assistant": 31,
+        "from_injected": 0,
+        "other": 0,
+        "total": 82
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 32
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:409762f0",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "409762f0",
+      "timestamp_dispatched": "2026-03-04T11:30:33.878Z",
+      "timestamp_responded": "2026-03-04T11:30:36.999Z",
+      "inference_ms": 3121,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 135,
+        "output": 58,
+        "cache_read": 37376,
+        "cache_write": 0,
+        "total_tokens": 37569
+      },
+      "new_tokens": {
+        "from_tool_results": 73,
+        "from_user_input": 0,
+        "from_previous_assistant": 30,
+        "from_injected": 0,
+        "other": 0,
+        "total": 103
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 25
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4cd90861",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4cd90861",
+      "timestamp_dispatched": "2026-03-04T11:30:37.017Z",
+      "timestamp_responded": "2026-03-04T11:30:40.518Z",
+      "inference_ms": 3501,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 5829,
+        "output": 88,
+        "cache_read": 37504,
+        "cache_write": 0,
+        "total_tokens": 43421
+      },
+      "new_tokens": {
+        "from_tool_results": 5757,
+        "from_user_input": 0,
+        "from_previous_assistant": 46,
+        "from_injected": 0,
+        "other": 0,
+        "total": 5803
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 18
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:ddd7e5fc",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "ddd7e5fc",
+      "timestamp_dispatched": "2026-03-04T11:30:40.547Z",
+      "timestamp_responded": "2026-03-04T11:30:42.233Z",
+      "inference_ms": 1686,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 200,
+        "output": 68,
+        "cache_read": 43264,
+        "cache_write": 0,
+        "total_tokens": 43532
+      },
+      "new_tokens": {
+        "from_tool_results": 36,
+        "from_user_input": 0,
+        "from_previous_assistant": 47,
+        "from_injected": 0,
+        "other": 0,
+        "total": 83
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 29
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:320fe05d",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "320fe05d",
+      "timestamp_dispatched": "2026-03-04T11:30:42.273Z",
+      "timestamp_responded": "2026-03-04T11:30:44.387Z",
+      "inference_ms": 2114,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 184,
+        "output": 67,
+        "cache_read": 43392,
+        "cache_write": 0,
+        "total_tokens": 43643
+      },
+      "new_tokens": {
+        "from_tool_results": 37,
+        "from_user_input": 0,
+        "from_previous_assistant": 44,
+        "from_injected": 0,
+        "other": 0,
+        "total": 81
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 40
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4365763e",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4365763e",
+      "timestamp_dispatched": "2026-03-04T11:30:44.421Z",
+      "timestamp_responded": "2026-03-04T11:30:46.426Z",
+      "inference_ms": 2005,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 573,
+        "output": 62,
+        "cache_read": 43520,
+        "cache_write": 0,
+        "total_tokens": 44155
+      },
+      "new_tokens": {
+        "from_tool_results": 443,
+        "from_user_input": 0,
+        "from_previous_assistant": 44,
+        "from_injected": 0,
+        "other": 0,
+        "total": 487
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 34
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:7efc89f5",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "7efc89f5",
+      "timestamp_dispatched": "2026-03-04T11:30:46.464Z",
+      "timestamp_responded": "2026-03-04T11:30:55.522Z",
+      "inference_ms": 9058,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 2734,
+        "output": 465,
+        "cache_read": 44032,
+        "cache_write": 0,
+        "total_tokens": 47231
+      },
+      "new_tokens": {
+        "from_tool_results": 2604,
+        "from_user_input": 0,
+        "from_previous_assistant": 46,
+        "from_injected": 0,
+        "other": 0,
+        "total": 2650
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 38
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:2b40439c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "2b40439c",
+      "timestamp_dispatched": "2026-03-04T11:30:55.585Z",
+      "timestamp_responded": "2026-03-04T11:31:01.410Z",
+      "inference_ms": 5825,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 142,
+        "output": 76,
+        "cache_read": 47104,
+        "cache_write": 0,
+        "total_tokens": 47322
+      },
+      "new_tokens": {
+        "from_tool_results": 8,
+        "from_user_input": 0,
+        "from_previous_assistant": 149,
+        "from_injected": 0,
+        "other": 0,
+        "total": 157
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 63
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:2d4bed58",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "2d4bed58",
+      "timestamp_dispatched": "2026-03-04T11:31:01.436Z",
+      "timestamp_responded": "2026-03-04T11:31:04.784Z",
+      "inference_ms": 3348,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 174,
+        "output": 58,
+        "cache_read": 47232,
+        "cache_write": 0,
+        "total_tokens": 47464
+      },
+      "new_tokens": {
+        "from_tool_results": 77,
+        "from_user_input": 0,
+        "from_previous_assistant": 32,
+        "from_injected": 0,
+        "other": 0,
+        "total": 109
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 26
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:208a8929",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "208a8929",
+      "timestamp_dispatched": "2026-03-04T11:31:04.805Z",
+      "timestamp_responded": "2026-03-04T11:31:10.151Z",
+      "inference_ms": 5346,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 3337,
+        "output": 467,
+        "cache_read": 47360,
+        "cache_write": 0,
+        "total_tokens": 51164
+      },
+      "new_tokens": {
+        "from_tool_results": 3226,
+        "from_user_input": 0,
+        "from_previous_assistant": 45,
+        "from_injected": 0,
+        "other": 0,
+        "total": 3271
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 21
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:c6322205",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "c6322205",
+      "timestamp_dispatched": "2026-03-04T11:31:10.184Z",
+      "timestamp_responded": "2026-03-04T11:31:14.500Z",
+      "inference_ms": 4316,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 34213,
+        "output": 90,
+        "cache_read": 17024,
+        "cache_write": 0,
+        "total_tokens": 51327
+      },
+      "new_tokens": {
+        "from_tool_results": 66,
+        "from_user_input": 0,
+        "from_previous_assistant": 47,
+        "from_injected": 0,
+        "other": 0,
+        "total": 113
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 33
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:9fa09159",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "9fa09159",
+      "timestamp_dispatched": "2026-03-04T11:31:14.536Z",
+      "timestamp_responded": "2026-03-04T11:31:19.704Z",
+      "inference_ms": 5168,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 162,
+        "output": 107,
+        "cache_read": 51200,
+        "cache_write": 0,
+        "total_tokens": 51469
+      },
+      "new_tokens": {
+        "from_tool_results": 28,
+        "from_user_input": 0,
+        "from_previous_assistant": 32,
+        "from_injected": 0,
+        "other": 0,
+        "total": 60
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 36
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:18e3c868",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "18e3c868",
+      "timestamp_dispatched": "2026-03-04T11:31:19.737Z",
+      "timestamp_responded": "2026-03-04T11:31:22.173Z",
+      "inference_ms": 2436,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 776,
+        "output": 63,
+        "cache_read": 51072,
+        "cache_write": 0,
+        "total_tokens": 51911
+      },
+      "new_tokens": {
+        "from_tool_results": 372,
+        "from_user_input": 0,
+        "from_previous_assistant": 44,
+        "from_injected": 0,
+        "other": 0,
+        "total": 416
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 33
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:2298be68",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "2298be68",
+      "timestamp_dispatched": "2026-03-04T11:31:22.205Z",
+      "timestamp_responded": "2026-03-04T11:31:26.115Z",
+      "inference_ms": 3910,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 5217,
+        "output": 285,
+        "cache_read": 51072,
+        "cache_write": 0,
+        "total_tokens": 56574
+      },
+      "new_tokens": {
+        "from_tool_results": 4371,
+        "from_user_input": 0,
+        "from_previous_assistant": 49,
+        "from_injected": 0,
+        "other": 0,
+        "total": 4420
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 32
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:7fd83ef2",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "7fd83ef2",
+      "timestamp_dispatched": "2026-03-04T11:31:26.143Z",
+      "timestamp_responded": "2026-03-04T11:31:32.282Z",
+      "inference_ms": 6139,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 899,
+        "output": 390,
+        "cache_read": 56448,
+        "cache_write": 0,
+        "total_tokens": 57737
+      },
+      "new_tokens": {
+        "from_tool_results": 766,
+        "from_user_input": 0,
+        "from_previous_assistant": 42,
+        "from_injected": 0,
+        "other": 0,
+        "total": 808
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 28
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:e5e71171",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "e5e71171",
+      "timestamp_dispatched": "2026-03-04T11:31:32.326Z",
+      "timestamp_responded": "2026-03-04T11:31:42.688Z",
+      "inference_ms": 10362,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 8078,
+        "output": 757,
+        "cache_read": 51328,
+        "cache_write": 0,
+        "total_tokens": 60163
+      },
+      "new_tokens": {
+        "from_tool_results": 1662,
+        "from_user_input": 0,
+        "from_previous_assistant": 45,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1707
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 44
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:f2f97095",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "f2f97095",
+      "timestamp_dispatched": "2026-03-04T11:31:52.745Z",
+      "timestamp_responded": "2026-03-04T11:31:55.693Z",
+      "inference_ms": 2948,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1194,
+        "output": 26,
+        "cache_read": 59008,
+        "cache_write": 0,
+        "total_tokens": 60228
+      },
+      "new_tokens": {
+        "from_tool_results": 32,
+        "from_user_input": 0,
+        "from_previous_assistant": 268,
+        "from_injected": 0,
+        "other": 0,
+        "total": 300
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 10057
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:5800eaff",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "5800eaff",
+      "timestamp_dispatched": "2026-03-04T11:31:55.707Z",
+      "timestamp_responded": "2026-03-04T11:31:57.861Z",
+      "inference_ms": 2154,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 91,
+        "output": 40,
+        "cache_read": 60160,
+        "cache_write": 0,
+        "total_tokens": 60291
+      },
+      "new_tokens": {
+        "from_tool_results": 16,
+        "from_user_input": 0,
+        "from_previous_assistant": 13,
+        "from_injected": 0,
+        "other": 0,
+        "total": 29
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 14
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:b0028aee",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "b0028aee",
+      "timestamp_dispatched": "2026-03-04T11:31:59.135Z",
+      "timestamp_responded": "2026-03-04T11:33:34.964Z",
+      "inference_ms": 95829,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 17408,
+        "output": 13909,
+        "cache_read": 60160,
+        "cache_write": 0,
+        "total_tokens": 91477
+      },
+      "new_tokens": {
+        "from_tool_results": 17270,
+        "from_user_input": 0,
+        "from_previous_assistant": 31,
+        "from_injected": 0,
+        "other": 0,
+        "total": 17301
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1274
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:38addc70",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "38addc70",
+      "timestamp_dispatched": "2026-03-04T11:33:34.989Z",
+      "timestamp_responded": "2026-03-04T11:33:38.570Z",
+      "inference_ms": 3581,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 8814,
+        "output": 101,
+        "cache_read": 82688,
+        "cache_write": 0,
+        "total_tokens": 91603
+      },
+      "new_tokens": {
+        "from_tool_results": 19,
+        "from_user_input": 0,
+        "from_previous_assistant": 1893,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1912
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 25
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:1ab2e0e4",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "1ab2e0e4",
+      "timestamp_dispatched": "2026-03-04T11:33:38.608Z",
+      "timestamp_responded": "2026-03-04T11:34:00.817Z",
+      "inference_ms": 22209,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 2455,
+        "output": 3075,
+        "cache_read": 90752,
+        "cache_write": 0,
+        "total_tokens": 96282
+      },
+      "new_tokens": {
+        "from_tool_results": 1597,
+        "from_user_input": 0,
+        "from_previous_assistant": 37,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1634
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 38
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:d6de386c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "d6de386c",
+      "timestamp_dispatched": "2026-03-04T11:34:00.847Z",
+      "timestamp_responded": "2026-03-04T11:34:05.376Z",
+      "inference_ms": 4529,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 2482,
+        "output": 99,
+        "cache_read": 93824,
+        "cache_write": 0,
+        "total_tokens": 96405
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 1798,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1815
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 30
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:327a0cd5",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "327a0cd5",
+      "timestamp_dispatched": "2026-03-04T11:34:05.453Z",
+      "timestamp_responded": "2026-03-04T11:34:16.149Z",
+      "inference_ms": 10696,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 408,
+        "output": 786,
+        "cache_read": 96256,
+        "cache_write": 0,
+        "total_tokens": 97450
+      },
+      "new_tokens": {
+        "from_tool_results": 252,
+        "from_user_input": 0,
+        "from_previous_assistant": 39,
+        "from_injected": 0,
+        "other": 0,
+        "total": 291
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 77
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:bc785c3a",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "bc785c3a",
+      "timestamp_dispatched": "2026-03-04T11:34:16.158Z",
+      "timestamp_responded": "2026-03-04T11:34:20.980Z",
+      "inference_ms": 4822,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1474,
+        "output": 416,
+        "cache_read": 96000,
+        "cache_write": 0,
+        "total_tokens": 97890
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 655,
+        "from_injected": 0,
+        "other": 0,
+        "total": 672
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 9
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:fe3246ba",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "fe3246ba",
+      "timestamp_dispatched": "2026-03-04T11:34:21.003Z",
+      "timestamp_responded": "2026-03-04T11:34:24.171Z",
+      "inference_ms": 3168,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 886,
+        "output": 273,
+        "cache_read": 97024,
+        "cache_write": 0,
+        "total_tokens": 98183
+      },
+      "new_tokens": {
+        "from_tool_results": 13,
+        "from_user_input": 0,
+        "from_previous_assistant": 321,
+        "from_injected": 0,
+        "other": 0,
+        "total": 334
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 23
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:e38b78b5",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "e38b78b5",
+      "timestamp_dispatched": "2026-03-04T11:34:25.958Z",
+      "timestamp_responded": "2026-03-04T11:34:28.198Z",
+      "inference_ms": 2240,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 436,
+        "output": 122,
+        "cache_read": 98048,
+        "cache_write": 0,
+        "total_tokens": 98606
+      },
+      "new_tokens": {
+        "from_tool_results": 294,
+        "from_user_input": 0,
+        "from_previous_assistant": 35,
+        "from_injected": 0,
+        "other": 0,
+        "total": 329
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1787
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:0589744c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "0589744c",
+      "timestamp_dispatched": "2026-03-04T11:34:31.518Z",
+      "timestamp_responded": "2026-03-04T11:34:55.705Z",
+      "inference_ms": 24187,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 446,
+        "output": 3358,
+        "cache_read": 98560,
+        "cache_write": 0,
+        "total_tokens": 102364
+      },
+      "new_tokens": {
+        "from_tool_results": 393,
+        "from_user_input": 0,
+        "from_previous_assistant": 31,
+        "from_injected": 0,
+        "other": 0,
+        "total": 424
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 3320
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:41b5d168",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "41b5d168",
+      "timestamp_dispatched": "2026-03-04T11:34:55.738Z",
+      "timestamp_responded": "2026-03-04T11:35:02.267Z",
+      "inference_ms": 6529,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 2444,
+        "output": 639,
+        "cache_read": 99968,
+        "cache_write": 0,
+        "total_tokens": 103051
+      },
+      "new_tokens": {
+        "from_tool_results": 41,
+        "from_user_input": 0,
+        "from_previous_assistant": 1667,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1708
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 33
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:f6cfed24",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "f6cfed24",
+      "timestamp_dispatched": "2026-03-04T11:35:02.284Z",
+      "timestamp_responded": "2026-03-04T11:35:05.176Z",
+      "inference_ms": 2892,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1059,
+        "output": 228,
+        "cache_read": 102016,
+        "cache_write": 0,
+        "total_tokens": 103303
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 160,
+        "from_injected": 0,
+        "other": 0,
+        "total": 177
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 17
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:596370ff",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "596370ff",
+      "timestamp_dispatched": "2026-03-04T11:35:05.296Z",
+      "timestamp_responded": "2026-03-04T11:35:09.964Z",
+      "inference_ms": 4668,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 101663,
+        "output": 211,
+        "cache_read": 1664,
+        "cache_write": 0,
+        "total_tokens": 103538
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 180,
+        "from_injected": 0,
+        "other": 0,
+        "total": 197
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 120
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:859283ab",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "859283ab",
+      "timestamp_dispatched": "2026-03-04T11:35:09.988Z",
+      "timestamp_responded": "2026-03-04T11:35:12.577Z",
+      "inference_ms": 2589,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 522,
+        "output": 173,
+        "cache_read": 103040,
+        "cache_write": 0,
+        "total_tokens": 103735
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 114,
+        "from_injected": 0,
+        "other": 0,
+        "total": 131
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 24
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:e4aeb6d5",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "e4aeb6d5",
+      "timestamp_dispatched": "2026-03-04T11:35:12.595Z",
+      "timestamp_responded": "2026-03-04T11:35:14.937Z",
+      "inference_ms": 2342,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 335,
+        "output": 59,
+        "cache_read": 103424,
+        "cache_write": 0,
+        "total_tokens": 103818
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 89,
+        "from_injected": 0,
+        "other": 0,
+        "total": 106
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 18
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:daf22c55",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "daf22c55",
+      "timestamp_dispatched": "2026-03-04T11:35:20.553Z",
+      "timestamp_responded": "2026-03-04T11:35:29.231Z",
+      "inference_ms": 8678,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 569,
+        "output": 64,
+        "cache_read": 103552,
+        "cache_write": 0,
+        "total_tokens": 104185
+      },
+      "new_tokens": {
+        "from_tool_results": 296,
+        "from_user_input": 0,
+        "from_previous_assistant": 32,
+        "from_injected": 0,
+        "other": 0,
+        "total": 328
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 5616
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:e47a1503",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "e47a1503",
+      "timestamp_dispatched": "2026-03-04T11:35:29.286Z",
+      "timestamp_responded": "2026-03-04T11:35:52.674Z",
+      "inference_ms": 23388,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 207,
+        "output": 100,
+        "cache_read": 104064,
+        "cache_write": 0,
+        "total_tokens": 104371
+      },
+      "new_tokens": {
+        "from_tool_results": 79,
+        "from_user_input": 0,
+        "from_previous_assistant": 26,
+        "from_injected": 0,
+        "other": 0,
+        "total": 105
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 55
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:22928357",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "22928357",
+      "timestamp_dispatched": "2026-03-04T11:35:52.706Z",
+      "timestamp_responded": "2026-03-04T11:35:55.535Z",
+      "inference_ms": 2829,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1086,
+        "output": 236,
+        "cache_read": 104320,
+        "cache_write": 0,
+        "total_tokens": 105642
+      },
+      "new_tokens": {
+        "from_tool_results": 1028,
+        "from_user_input": 0,
+        "from_previous_assistant": 37,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1065
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 32
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:89e2ab81",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "89e2ab81",
+      "timestamp_dispatched": "2026-03-04T11:35:55.559Z",
+      "timestamp_responded": "2026-03-04T11:36:03.251Z",
+      "inference_ms": 7692,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "stop",
+      "usage": {
+        "input": 489,
+        "output": 663,
+        "cache_read": 105600,
+        "cache_write": 0,
+        "total_tokens": 106752
+      },
+      "new_tokens": {
+        "from_tool_results": 440,
+        "from_user_input": 0,
+        "from_previous_assistant": 21,
+        "from_injected": 0,
+        "other": 0,
+        "total": 461
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 24
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:8a638da0",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "8a638da0",
+      "timestamp_dispatched": "2026-03-04T11:36:41.899Z",
+      "timestamp_responded": "2026-03-04T11:36:47.828Z",
+      "inference_ms": 5929,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "user",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 81818,
+        "output": 137,
+        "cache_read": 1664,
+        "cache_write": 0,
+        "total_tokens": 83619
+      },
+      "new_tokens": {
+        "from_tool_results": 0,
+        "from_user_input": 87,
+        "from_previous_assistant": 402,
+        "from_injected": 0,
+        "other": 0,
+        "total": 489
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 38648
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:87794fff",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "87794fff",
+      "timestamp_dispatched": "2026-03-04T11:36:47.852Z",
+      "timestamp_responded": "2026-03-04T11:36:54.651Z",
+      "inference_ms": 6799,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 73,
+        "output": 554,
+        "cache_read": 83584,
+        "cache_write": 0,
+        "total_tokens": 84211
+      },
+      "new_tokens": {
+        "from_tool_results": 30,
+        "from_user_input": 0,
+        "from_previous_assistant": 31,
+        "from_injected": 0,
+        "other": 0,
+        "total": 61
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 24
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4bf378f9",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4bf378f9",
+      "timestamp_dispatched": "2026-03-04T11:36:54.675Z",
+      "timestamp_responded": "2026-03-04T11:37:12.108Z",
+      "inference_ms": 17433,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 349,
+        "output": 2377,
+        "cache_read": 84096,
+        "cache_write": 0,
+        "total_tokens": 86822
+      },
+      "new_tokens": {
+        "from_tool_results": 227,
+        "from_user_input": 0,
+        "from_previous_assistant": 118,
+        "from_injected": 0,
+        "other": 0,
+        "total": 345
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 24
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:a193e0c7",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "a193e0c7",
+      "timestamp_dispatched": "2026-03-04T11:37:12.119Z",
+      "timestamp_responded": "2026-03-04T11:37:19.613Z",
+      "inference_ms": 7494,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1084,
+        "output": 686,
+        "cache_read": 85760,
+        "cache_write": 0,
+        "total_tokens": 87530
+      },
+      "new_tokens": {
+        "from_tool_results": 15,
+        "from_user_input": 0,
+        "from_previous_assistant": 369,
+        "from_injected": 0,
+        "other": 0,
+        "total": 384
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 11
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:0be88b49",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "0be88b49",
+      "timestamp_dispatched": "2026-03-04T11:37:19.633Z",
+      "timestamp_responded": "2026-03-04T11:37:24.581Z",
+      "inference_ms": 4948,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 770,
+        "output": 123,
+        "cache_read": 86784,
+        "cache_write": 0,
+        "total_tokens": 87677
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 268,
+        "from_injected": 0,
+        "other": 0,
+        "total": 285
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 20
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:6561f5a8",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "6561f5a8",
+      "timestamp_dispatched": "2026-03-04T11:37:24.595Z",
+      "timestamp_responded": "2026-03-04T11:37:26.988Z",
+      "inference_ms": 2393,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 960,
+        "output": 55,
+        "cache_read": 86784,
+        "cache_write": 0,
+        "total_tokens": 87799
+      },
+      "new_tokens": {
+        "from_tool_results": 60,
+        "from_user_input": 0,
+        "from_previous_assistant": 89,
+        "from_injected": 0,
+        "other": 0,
+        "total": 149
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 14
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:47c43abf",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "47c43abf",
+      "timestamp_dispatched": "2026-03-04T11:37:27.004Z",
+      "timestamp_responded": "2026-03-04T11:37:37.155Z",
+      "inference_ms": 10151,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1632,
+        "output": 799,
+        "cache_read": 87680,
+        "cache_write": 0,
+        "total_tokens": 90111
+      },
+      "new_tokens": {
+        "from_tool_results": 1506,
+        "from_user_input": 0,
+        "from_previous_assistant": 37,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1543
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 16
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:6c86dd0f",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "6c86dd0f",
+      "timestamp_dispatched": "2026-03-04T11:37:37.191Z",
+      "timestamp_responded": "2026-03-04T11:37:43.463Z",
+      "inference_ms": 6272,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1468,
+        "output": 649,
+        "cache_read": 88704,
+        "cache_write": 0,
+        "total_tokens": 90821
+      },
+      "new_tokens": {
+        "from_tool_results": 54,
+        "from_user_input": 0,
+        "from_previous_assistant": 618,
+        "from_injected": 0,
+        "other": 0,
+        "total": 672
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 36
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:10f8cd80",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "10f8cd80",
+      "timestamp_dispatched": "2026-03-04T11:37:43.509Z",
+      "timestamp_responded": "2026-03-04T11:37:45.526Z",
+      "inference_ms": 2017,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1154,
+        "output": 55,
+        "cache_read": 89728,
+        "cache_write": 0,
+        "total_tokens": 90937
+      },
+      "new_tokens": {
+        "from_tool_results": 54,
+        "from_user_input": 0,
+        "from_previous_assistant": 617,
+        "from_injected": 0,
+        "other": 0,
+        "total": 671
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 46
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:95394504",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "95394504",
+      "timestamp_dispatched": "2026-03-04T11:37:45.539Z",
+      "timestamp_responded": "2026-03-04T11:37:51.374Z",
+      "inference_ms": 5835,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1065,
+        "output": 693,
+        "cache_read": 90880,
+        "cache_write": 0,
+        "total_tokens": 92638
+      },
+      "new_tokens": {
+        "from_tool_results": 1001,
+        "from_user_input": 0,
+        "from_previous_assistant": 39,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1040
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 13
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:0e88b53b",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "0e88b53b",
+      "timestamp_dispatched": "2026-03-04T11:37:51.424Z",
+      "timestamp_responded": "2026-03-04T11:37:54.340Z",
+      "inference_ms": 2916,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 758,
+        "output": 199,
+        "cache_read": 91904,
+        "cache_write": 0,
+        "total_tokens": 92861
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 654,
+        "from_injected": 0,
+        "other": 0,
+        "total": 671
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 50
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:43704d9e",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "43704d9e",
+      "timestamp_dispatched": "2026-03-04T11:37:54.347Z",
+      "timestamp_responded": "2026-03-04T11:38:03.291Z",
+      "inference_ms": 8944,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 85973,
+        "output": 529,
+        "cache_read": 6912,
+        "cache_write": 0,
+        "total_tokens": 93414
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 162,
+        "from_injected": 0,
+        "other": 0,
+        "total": 179
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 7
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:9ca62f1a",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "9ca62f1a",
+      "timestamp_dispatched": "2026-03-04T11:38:03.311Z",
+      "timestamp_responded": "2026-03-04T11:38:20.726Z",
+      "inference_ms": 17415,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 510,
+        "output": 1968,
+        "cache_read": 92928,
+        "cache_write": 0,
+        "total_tokens": 95406
+      },
+      "new_tokens": {
+        "from_tool_results": 17,
+        "from_user_input": 0,
+        "from_previous_assistant": 480,
+        "from_injected": 0,
+        "other": 0,
+        "total": 497
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 20
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:85eb89ff",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "85eb89ff",
+      "timestamp_dispatched": "2026-03-04T11:38:20.754Z",
+      "timestamp_responded": "2026-03-04T11:38:25.305Z",
+      "inference_ms": 4551,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1596,
+        "output": 479,
+        "cache_read": 95360,
+        "cache_write": 0,
+        "total_tokens": 97435
+      },
+      "new_tokens": {
+        "from_tool_results": 1543,
+        "from_user_input": 0,
+        "from_previous_assistant": 113,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1656
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 28
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:2339897a",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "2339897a",
+      "timestamp_dispatched": "2026-03-04T11:38:25.330Z",
+      "timestamp_responded": "2026-03-04T11:38:29.428Z",
+      "inference_ms": 4098,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 177,
+        "output": 390,
+        "cache_read": 97280,
+        "cache_write": 0,
+        "total_tokens": 97847
+      },
+      "new_tokens": {
+        "from_tool_results": 15,
+        "from_user_input": 0,
+        "from_previous_assistant": 128,
+        "from_injected": 0,
+        "other": 0,
+        "total": 143
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 25
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:62574352",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "62574352",
+      "timestamp_dispatched": "2026-03-04T11:38:29.451Z",
+      "timestamp_responded": "2026-03-04T11:38:34.558Z",
+      "inference_ms": 5107,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 96205,
+        "output": 378,
+        "cache_read": 1664,
+        "cache_write": 0,
+        "total_tokens": 98247
+      },
+      "new_tokens": {
+        "from_tool_results": 15,
+        "from_user_input": 0,
+        "from_previous_assistant": 352,
+        "from_injected": 0,
+        "other": 0,
+        "total": 367
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 23
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:2ea82e7a",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "2ea82e7a",
+      "timestamp_dispatched": "2026-03-04T11:38:34.625Z",
+      "timestamp_responded": "2026-03-04T11:38:42.615Z",
+      "inference_ms": 7990,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1245,
+        "output": 251,
+        "cache_read": 97024,
+        "cache_write": 0,
+        "total_tokens": 98520
+      },
+      "new_tokens": {
+        "from_tool_results": 15,
+        "from_user_input": 0,
+        "from_previous_assistant": 366,
+        "from_injected": 0,
+        "other": 0,
+        "total": 381
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 67
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:3e58decd",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "3e58decd",
+      "timestamp_dispatched": "2026-03-04T11:38:42.647Z",
+      "timestamp_responded": "2026-03-04T11:38:52.016Z",
+      "inference_ms": 9369,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 494,
+        "output": 340,
+        "cache_read": 98048,
+        "cache_write": 0,
+        "total_tokens": 98882
+      },
+      "new_tokens": {
+        "from_tool_results": 15,
+        "from_user_input": 0,
+        "from_previous_assistant": 198,
+        "from_injected": 0,
+        "other": 0,
+        "total": 213
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 32
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:b0fddb81",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "b0fddb81",
+      "timestamp_dispatched": "2026-03-04T11:38:52.043Z",
+      "timestamp_responded": "2026-03-04T11:38:56.798Z",
+      "inference_ms": 4755,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 856,
+        "output": 479,
+        "cache_read": 98048,
+        "cache_write": 0,
+        "total_tokens": 99383
+      },
+      "new_tokens": {
+        "from_tool_results": 15,
+        "from_user_input": 0,
+        "from_previous_assistant": 263,
+        "from_injected": 0,
+        "other": 0,
+        "total": 278
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 27
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:664a4f5c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "664a4f5c",
+      "timestamp_dispatched": "2026-03-04T11:38:56.829Z",
+      "timestamp_responded": "2026-03-04T11:39:05.266Z",
+      "inference_ms": 8437,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 2381,
+        "output": 679,
+        "cache_read": 97024,
+        "cache_write": 0,
+        "total_tokens": 100084
+      },
+      "new_tokens": {
+        "from_tool_results": 15,
+        "from_user_input": 0,
+        "from_previous_assistant": 421,
+        "from_injected": 0,
+        "other": 0,
+        "total": 436
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 31
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:bcb0974c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "bcb0974c",
+      "timestamp_dispatched": "2026-03-04T11:39:05.284Z",
+      "timestamp_responded": "2026-03-04T11:39:12.139Z",
+      "inference_ms": 6855,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1039,
+        "output": 691,
+        "cache_read": 99072,
+        "cache_write": 0,
+        "total_tokens": 100802
+      },
+      "new_tokens": {
+        "from_tool_results": 20,
+        "from_user_input": 0,
+        "from_previous_assistant": 528,
+        "from_injected": 0,
+        "other": 0,
+        "total": 548
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 18
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4a931ee1",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4a931ee1",
+      "timestamp_dispatched": "2026-03-04T11:39:12.169Z",
+      "timestamp_responded": "2026-03-04T11:39:16.773Z",
+      "inference_ms": 4604,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 726,
+        "output": 394,
+        "cache_read": 100096,
+        "cache_write": 0,
+        "total_tokens": 101216
+      },
+      "new_tokens": {
+        "from_tool_results": 13,
+        "from_user_input": 0,
+        "from_previous_assistant": 625,
+        "from_injected": 0,
+        "other": 0,
+        "total": 638
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 30
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:0a881890",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "0a881890",
+      "timestamp_dispatched": "2026-03-04T11:39:16.794Z",
+      "timestamp_responded": "2026-03-04T11:39:19.908Z",
+      "inference_ms": 3114,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 373,
+        "output": 69,
+        "cache_read": 100864,
+        "cache_write": 0,
+        "total_tokens": 101306
+      },
+      "new_tokens": {
+        "from_tool_results": 14,
+        "from_user_input": 0,
+        "from_previous_assistant": 245,
+        "from_injected": 0,
+        "other": 0,
+        "total": 259
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 21
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:20aa1187",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "20aa1187",
+      "timestamp_dispatched": "2026-03-04T11:39:19.929Z",
+      "timestamp_responded": "2026-03-04T11:39:28.818Z",
+      "inference_ms": 8889,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 750,
+        "output": 158,
+        "cache_read": 101248,
+        "cache_write": 0,
+        "total_tokens": 102156
+      },
+      "new_tokens": {
+        "from_tool_results": 685,
+        "from_user_input": 0,
+        "from_previous_assistant": 35,
+        "from_injected": 0,
+        "other": 0,
+        "total": 720
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 21
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:00f79b72",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "00f79b72",
+      "timestamp_dispatched": "2026-03-04T11:39:28.852Z",
+      "timestamp_responded": "2026-03-04T11:39:38.672Z",
+      "inference_ms": 9820,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 161,
+        "output": 1083,
+        "cache_read": 102016,
+        "cache_write": 0,
+        "total_tokens": 103260
+      },
+      "new_tokens": {
+        "from_tool_results": 14,
+        "from_user_input": 0,
+        "from_previous_assistant": 77,
+        "from_injected": 0,
+        "other": 0,
+        "total": 91
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 34
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:f22ef1e5",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "f22ef1e5",
+      "timestamp_dispatched": "2026-03-04T11:39:38.706Z",
+      "timestamp_responded": "2026-03-04T11:39:42.663Z",
+      "inference_ms": 3957,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1271,
+        "output": 355,
+        "cache_read": 102016,
+        "cache_write": 0,
+        "total_tokens": 103642
+      },
+      "new_tokens": {
+        "from_tool_results": 20,
+        "from_user_input": 0,
+        "from_previous_assistant": 743,
+        "from_injected": 0,
+        "other": 0,
+        "total": 763
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 34
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:3305949b",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "3305949b",
+      "timestamp_dispatched": "2026-03-04T11:39:42.704Z",
+      "timestamp_responded": "2026-03-04T11:39:45.904Z",
+      "inference_ms": 3200,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 245,
+        "output": 284,
+        "cache_read": 103424,
+        "cache_write": 0,
+        "total_tokens": 103953
+      },
+      "new_tokens": {
+        "from_tool_results": 20,
+        "from_user_input": 0,
+        "from_previous_assistant": 115,
+        "from_injected": 0,
+        "other": 0,
+        "total": 135
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 41
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:603c7f8c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "603c7f8c",
+      "timestamp_dispatched": "2026-03-04T11:39:47.768Z",
+      "timestamp_responded": "2026-03-04T11:39:50.009Z",
+      "inference_ms": 2241,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 448,
+        "output": 65,
+        "cache_read": 103808,
+        "cache_write": 0,
+        "total_tokens": 104321
+      },
+      "new_tokens": {
+        "from_tool_results": 296,
+        "from_user_input": 0,
+        "from_previous_assistant": 34,
+        "from_injected": 0,
+        "other": 0,
+        "total": 330
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1864
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:cdf0ad61",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "cdf0ad61",
+      "timestamp_dispatched": "2026-03-04T11:39:51.035Z",
+      "timestamp_responded": "2026-03-04T11:39:53.763Z",
+      "inference_ms": 2728,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 168,
+        "output": 39,
+        "cache_read": 104192,
+        "cache_write": 0,
+        "total_tokens": 104399
+      },
+      "new_tokens": {
+        "from_tool_results": 32,
+        "from_user_input": 0,
+        "from_previous_assistant": 42,
+        "from_injected": 0,
+        "other": 0,
+        "total": 74
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1026
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4b451b53",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4b451b53",
+      "timestamp_dispatched": "2026-03-04T11:40:00.338Z",
+      "timestamp_responded": "2026-03-04T11:40:07.412Z",
+      "inference_ms": 7074,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1659,
+        "output": 472,
+        "cache_read": 104320,
+        "cache_write": 0,
+        "total_tokens": 106451
+      },
+      "new_tokens": {
+        "from_tool_results": 1573,
+        "from_user_input": 0,
+        "from_previous_assistant": 30,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1603
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 6575
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4bfa85d9",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4bfa85d9",
+      "timestamp_dispatched": "2026-03-04T11:40:07.441Z",
+      "timestamp_responded": "2026-03-04T11:40:09.487Z",
+      "inference_ms": 2046,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 93,
+        "output": 48,
+        "cache_read": 106368,
+        "cache_write": 0,
+        "total_tokens": 106509
+      },
+      "new_tokens": {
+        "from_tool_results": 3,
+        "from_user_input": 0,
+        "from_previous_assistant": 24,
+        "from_injected": 0,
+        "other": 0,
+        "total": 27
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 29
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:ad90eff0",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "ad90eff0",
+      "timestamp_dispatched": "2026-03-04T11:40:09.515Z",
+      "timestamp_responded": "2026-03-04T11:40:19.304Z",
+      "inference_ms": 9789,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 346,
+        "output": 1018,
+        "cache_read": 106368,
+        "cache_write": 0,
+        "total_tokens": 107732
+      },
+      "new_tokens": {
+        "from_tool_results": 198,
+        "from_user_input": 0,
+        "from_previous_assistant": 22,
+        "from_injected": 0,
+        "other": 0,
+        "total": 220
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 28
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:7fd61638",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "7fd61638",
+      "timestamp_dispatched": "2026-03-04T11:40:19.328Z",
+      "timestamp_responded": "2026-03-04T11:40:22.833Z",
+      "inference_ms": 3505,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 8809,
+        "output": 58,
+        "cache_read": 98944,
+        "cache_write": 0,
+        "total_tokens": 107811
+      },
+      "new_tokens": {
+        "from_tool_results": 14,
+        "from_user_input": 0,
+        "from_previous_assistant": 131,
+        "from_injected": 0,
+        "other": 0,
+        "total": 145
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 24
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:a74c1013",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "a74c1013",
+      "timestamp_dispatched": "2026-03-04T11:40:23.855Z",
+      "timestamp_responded": "2026-03-04T11:40:28.445Z",
+      "inference_ms": 4590,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 586,
+        "output": 40,
+        "cache_read": 107264,
+        "cache_write": 0,
+        "total_tokens": 107890
+      },
+      "new_tokens": {
+        "from_tool_results": 32,
+        "from_user_input": 0,
+        "from_previous_assistant": 44,
+        "from_injected": 0,
+        "other": 0,
+        "total": 76
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1022
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:21584138",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "21584138",
+      "timestamp_dispatched": "2026-03-04T11:40:42.309Z",
+      "timestamp_responded": "2026-03-04T11:40:55.666Z",
+      "inference_ms": 13357,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 107806,
+        "output": 1156,
+        "cache_read": 1664,
+        "cache_write": 0,
+        "total_tokens": 110626
+      },
+      "new_tokens": {
+        "from_tool_results": 1573,
+        "from_user_input": 0,
+        "from_previous_assistant": 30,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1603
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 13864
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:1ee5fafc",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "1ee5fafc",
+      "timestamp_dispatched": "2026-03-04T11:40:55.678Z",
+      "timestamp_responded": "2026-03-04T11:40:57.858Z",
+      "inference_ms": 2180,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 201,
+        "output": 41,
+        "cache_read": 110464,
+        "cache_write": 0,
+        "total_tokens": 110706
+      },
+      "new_tokens": {
+        "from_tool_results": 32,
+        "from_user_input": 0,
+        "from_previous_assistant": 146,
+        "from_injected": 0,
+        "other": 0,
+        "total": 178
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 12
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:d98087fe",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "d98087fe",
+      "timestamp_dispatched": "2026-03-04T11:42:57.909Z",
+      "timestamp_responded": "2026-03-04T11:43:04.296Z",
+      "inference_ms": 6387,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 104001,
+        "output": 125,
+        "cache_read": 6784,
+        "cache_write": 0,
+        "total_tokens": 110910
+      },
+      "new_tokens": {
+        "from_tool_results": 72,
+        "from_user_input": 0,
+        "from_previous_assistant": 29,
+        "from_injected": 0,
+        "other": 0,
+        "total": 101
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 120051
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:c7b498f0",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "c7b498f0",
+      "timestamp_dispatched": "2026-03-04T11:43:04.379Z",
+      "timestamp_responded": "2026-03-04T11:43:11.782Z",
+      "inference_ms": 7403,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 3348,
+        "output": 144,
+        "cache_read": 107648,
+        "cache_write": 0,
+        "total_tokens": 111140
+      },
+      "new_tokens": {
+        "from_tool_results": 79,
+        "from_user_input": 0,
+        "from_previous_assistant": 38,
+        "from_injected": 0,
+        "other": 0,
+        "total": 117
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 83
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:512e7412",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "512e7412",
+      "timestamp_dispatched": "2026-03-04T11:43:11.789Z",
+      "timestamp_responded": "2026-03-04T11:43:14.285Z",
+      "inference_ms": 2496,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 371,
+        "output": 88,
+        "cache_read": 110848,
+        "cache_write": 0,
+        "total_tokens": 111307
+      },
+      "new_tokens": {
+        "from_tool_results": 72,
+        "from_user_input": 0,
+        "from_previous_assistant": 50,
+        "from_injected": 0,
+        "other": 0,
+        "total": 122
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 7
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:f9aea3a1",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "f9aea3a1",
+      "timestamp_dispatched": "2026-03-04T11:43:14.379Z",
+      "timestamp_responded": "2026-03-04T11:43:22.431Z",
+      "inference_ms": 8052,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 749,
+        "output": 778,
+        "cache_read": 110592,
+        "cache_write": 0,
+        "total_tokens": 112119
+      },
+      "new_tokens": {
+        "from_tool_results": 27,
+        "from_user_input": 0,
+        "from_previous_assistant": 44,
+        "from_injected": 0,
+        "other": 0,
+        "total": 71
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 94
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:3a2ce6f5",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "3a2ce6f5",
+      "timestamp_dispatched": "2026-03-04T11:43:23.471Z",
+      "timestamp_responded": "2026-03-04T11:43:31.495Z",
+      "inference_ms": 8024,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 134,
+        "output": 761,
+        "cache_read": 112000,
+        "cache_write": 0,
+        "total_tokens": 112895
+      },
+      "new_tokens": {
+        "from_tool_results": 8,
+        "from_user_input": 0,
+        "from_previous_assistant": 134,
+        "from_injected": 0,
+        "other": 0,
+        "total": 142
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1040
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:93b9d274",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "93b9d274",
+      "timestamp_dispatched": "2026-03-04T11:43:32.570Z",
+      "timestamp_responded": "2026-03-04T11:43:39.315Z",
+      "inference_ms": 6745,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 166,
+        "output": 608,
+        "cache_read": 112768,
+        "cache_write": 0,
+        "total_tokens": 113542
+      },
+      "new_tokens": {
+        "from_tool_results": 32,
+        "from_user_input": 0,
+        "from_previous_assistant": 137,
+        "from_injected": 0,
+        "other": 0,
+        "total": 169
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1075
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:be57957e",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "be57957e",
+      "timestamp_dispatched": "2026-03-04T11:43:39.391Z",
+      "timestamp_responded": "2026-03-04T11:43:53.016Z",
+      "inference_ms": 13625,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 149,
+        "output": 941,
+        "cache_read": 113408,
+        "cache_write": 0,
+        "total_tokens": 114498
+      },
+      "new_tokens": {
+        "from_tool_results": 8,
+        "from_user_input": 0,
+        "from_previous_assistant": 48,
+        "from_injected": 0,
+        "other": 0,
+        "total": 56
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 76
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:0476d4e2",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "0476d4e2",
+      "timestamp_dispatched": "2026-03-04T11:43:53.055Z",
+      "timestamp_responded": "2026-03-04T11:43:56.101Z",
+      "inference_ms": 3046,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 81,
+        "output": 42,
+        "cache_read": 114432,
+        "cache_write": 0,
+        "total_tokens": 114555
+      },
+      "new_tokens": {
+        "from_tool_results": 8,
+        "from_user_input": 0,
+        "from_previous_assistant": 132,
+        "from_injected": 0,
+        "other": 0,
+        "total": 140
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 39
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:4f04798c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "4f04798c",
+      "timestamp_dispatched": "2026-03-04T11:43:56.124Z",
+      "timestamp_responded": "2026-03-04T11:43:58.235Z",
+      "inference_ms": 2111,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 206,
+        "output": 103,
+        "cache_read": 114432,
+        "cache_write": 0,
+        "total_tokens": 114741
+      },
+      "new_tokens": {
+        "from_tool_results": 76,
+        "from_user_input": 0,
+        "from_previous_assistant": 31,
+        "from_injected": 0,
+        "other": 0,
+        "total": 107
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 23
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:e8818a55",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "e8818a55",
+      "timestamp_dispatched": "2026-03-04T11:43:59.255Z",
+      "timestamp_responded": "2026-03-04T11:44:01.855Z",
+      "inference_ms": 2600,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 92,
+        "output": 38,
+        "cache_read": 114688,
+        "cache_write": 0,
+        "total_tokens": 114818
+      },
+      "new_tokens": {
+        "from_tool_results": 32,
+        "from_user_input": 0,
+        "from_previous_assistant": 44,
+        "from_injected": 0,
+        "other": 0,
+        "total": 76
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 1020
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:9efb118d",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "9efb118d",
+      "timestamp_dispatched": "2026-03-04T11:44:17.463Z",
+      "timestamp_responded": "2026-03-04T11:44:20.737Z",
+      "inference_ms": 3274,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 1710,
+        "output": 270,
+        "cache_read": 114688,
+        "cache_write": 0,
+        "total_tokens": 116668
+      },
+      "new_tokens": {
+        "from_tool_results": 1573,
+        "from_user_input": 0,
+        "from_previous_assistant": 31,
+        "from_injected": 0,
+        "other": 0,
+        "total": 1604
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 15608
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:5d81ac6b",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "5d81ac6b",
+      "timestamp_dispatched": "2026-03-04T11:44:21.483Z",
+      "timestamp_responded": "2026-03-04T11:44:23.625Z",
+      "inference_ms": 2142,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 303,
+        "output": 94,
+        "cache_read": 116480,
+        "cache_write": 0,
+        "total_tokens": 116877
+      },
+      "new_tokens": {
+        "from_tool_results": 108,
+        "from_user_input": 0,
+        "from_previous_assistant": 150,
+        "from_injected": 0,
+        "other": 0,
+        "total": 258
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 746
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:636a3e5d",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "636a3e5d",
+      "timestamp_dispatched": "2026-03-04T11:44:23.640Z",
+      "timestamp_responded": "2026-03-04T11:44:26.369Z",
+      "inference_ms": 2729,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 180,
+        "output": 39,
+        "cache_read": 116736,
+        "cache_write": 0,
+        "total_tokens": 116955
+      },
+      "new_tokens": {
+        "from_tool_results": 32,
+        "from_user_input": 0,
+        "from_previous_assistant": 52,
+        "from_injected": 0,
+        "other": 0,
+        "total": 84
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 15
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:abc6221c",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "abc6221c",
+      "timestamp_dispatched": "2026-03-04T11:46:26.434Z",
+      "timestamp_responded": "2026-03-04T11:46:29.812Z",
+      "inference_ms": 3378,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 554,
+        "output": 202,
+        "cache_read": 116480,
+        "cache_write": 0,
+        "total_tokens": 117236
+      },
+      "new_tokens": {
+        "from_tool_results": 72,
+        "from_user_input": 0,
+        "from_previous_assistant": 29,
+        "from_injected": 0,
+        "other": 0,
+        "total": 101
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 120065
+    },
+    {
+      "id": "3bd5ba52-55dd-416d-b017-06e655180e43:8b094f8f",
+      "session_id": "3bd5ba52-55dd-416d-b017-06e655180e43",
+      "session_key": "agent:main:main",
+      "entry_id": "8b094f8f",
+      "timestamp_dispatched": "2026-03-04T11:46:32.440Z",
+      "timestamp_responded": "2026-03-04T11:46:39.430Z",
+      "inference_ms": 6990,
+      "model": "gpt-5.1-codex-mini",
+      "provider": "openai-codex",
+      "trigger": "tool_result",
+      "stop_reason": "toolUse",
+      "usage": {
+        "input": 255,
+        "output": 293,
+        "cache_read": 116992,
+        "cache_write": 0,
+        "total_tokens": 117540
+      },
+      "new_tokens": {
+        "from_tool_results": 4,
+        "from_user_input": 0,
+        "from_previous_assistant": 145,
+        "from_injected": 0,
+        "other": 0,
+        "total": 149
+      },
+      "spawns_subagent": null,
+      "receives_subagent_result": null,
+      "wait_after_ready_ms": 2628
+    }
+  ],
+  "edges": [
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:0f731694",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:1fb969b2",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:1fb969b2",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:5a4e4672",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:5a4e4672",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4b2c9091",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4b2c9091",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:b82bd11c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:b82bd11c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:58e88d6c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:58e88d6c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:2b91392b",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:2b91392b",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:522ee836",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:522ee836",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:b19b89bd",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:b19b89bd",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:ef62cae8",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:ef62cae8",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:d894fb65",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:d894fb65",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:ba3eeec0",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:ba3eeec0",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:95843b1b",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:95843b1b",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:96e14d12",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:96e14d12",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:d428b454",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:d428b454",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:5923192a",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:5923192a",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:dc8ed0f8",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:dc8ed0f8",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:00a11c09",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:00a11c09",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:93738250",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:93738250",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:0de431bd",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:0de431bd",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4b741b73",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4b741b73",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:ea779e40",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:ea779e40",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:ef186da8",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:ef186da8",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:a8e63153",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:a8e63153",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:98841359",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:98841359",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:ecb33d48",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:ecb33d48",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:ef7b7106",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:ef7b7106",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:0a00c04b",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:0a00c04b",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:8495b1d9",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:8495b1d9",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:8aa8de1b",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:8aa8de1b",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:6ac39d0f",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:6ac39d0f",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:2a84b1b1",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:2a84b1b1",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:f9b111ae",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:f9b111ae",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:f0788edf",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:f0788edf",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:18475a17",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:18475a17",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:b96cf280",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:b96cf280",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:fcf8e85c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:fcf8e85c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:dba59e35",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:dba59e35",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:aa2392ed",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:aa2392ed",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:f10a0415",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:f10a0415",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:3abf19e0",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:3abf19e0",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:b319508a",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:b319508a",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:04793a3a",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:04793a3a",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:409762f0",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:409762f0",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4cd90861",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4cd90861",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:ddd7e5fc",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:ddd7e5fc",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:320fe05d",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:320fe05d",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4365763e",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4365763e",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:7efc89f5",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:7efc89f5",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:2b40439c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:2b40439c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:2d4bed58",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:2d4bed58",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:208a8929",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:208a8929",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:c6322205",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:c6322205",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:9fa09159",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:9fa09159",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:18e3c868",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:18e3c868",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:2298be68",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:2298be68",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:7fd83ef2",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:7fd83ef2",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:e5e71171",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:e5e71171",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:f2f97095",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:f2f97095",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:5800eaff",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:5800eaff",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:b0028aee",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:b0028aee",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:38addc70",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:38addc70",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:1ab2e0e4",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:1ab2e0e4",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:d6de386c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:d6de386c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:327a0cd5",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:327a0cd5",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:bc785c3a",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:bc785c3a",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:fe3246ba",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:fe3246ba",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:e38b78b5",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:e38b78b5",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:0589744c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:0589744c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:41b5d168",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:41b5d168",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:f6cfed24",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:f6cfed24",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:596370ff",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:596370ff",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:859283ab",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:859283ab",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:e4aeb6d5",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:e4aeb6d5",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:daf22c55",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:daf22c55",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:e47a1503",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:e47a1503",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:22928357",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:22928357",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:89e2ab81",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:89e2ab81",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:8a638da0",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:8a638da0",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:87794fff",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:87794fff",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4bf378f9",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4bf378f9",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:a193e0c7",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:a193e0c7",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:0be88b49",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:0be88b49",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:6561f5a8",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:6561f5a8",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:47c43abf",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:47c43abf",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:6c86dd0f",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:6c86dd0f",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:10f8cd80",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:10f8cd80",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:95394504",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:95394504",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:0e88b53b",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:0e88b53b",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:43704d9e",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:43704d9e",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:9ca62f1a",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:9ca62f1a",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:85eb89ff",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:85eb89ff",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:2339897a",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:2339897a",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:62574352",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:62574352",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:2ea82e7a",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:2ea82e7a",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:3e58decd",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:3e58decd",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:b0fddb81",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:b0fddb81",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:664a4f5c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:664a4f5c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:bcb0974c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:bcb0974c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4a931ee1",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4a931ee1",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:0a881890",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:0a881890",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:20aa1187",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:20aa1187",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:00f79b72",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:00f79b72",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:f22ef1e5",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:f22ef1e5",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:3305949b",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:3305949b",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:603c7f8c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:603c7f8c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:cdf0ad61",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:cdf0ad61",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4b451b53",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4b451b53",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4bfa85d9",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4bfa85d9",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:ad90eff0",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:ad90eff0",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:7fd61638",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:7fd61638",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:a74c1013",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:a74c1013",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:21584138",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:21584138",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:1ee5fafc",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:1ee5fafc",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:d98087fe",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:d98087fe",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:c7b498f0",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:c7b498f0",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:512e7412",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:512e7412",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:f9aea3a1",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:f9aea3a1",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:3a2ce6f5",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:3a2ce6f5",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:93b9d274",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:93b9d274",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:be57957e",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:be57957e",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:0476d4e2",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:0476d4e2",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:4f04798c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:4f04798c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:e8818a55",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:e8818a55",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:9efb118d",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:9efb118d",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:5d81ac6b",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:5d81ac6b",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:636a3e5d",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:636a3e5d",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:abc6221c",
+      "type": "sequential",
+      "is_history_parent": true
+    },
+    {
+      "from": "3bd5ba52-55dd-416d-b017-06e655180e43:abc6221c",
+      "to": "3bd5ba52-55dd-416d-b017-06e655180e43:8b094f8f",
+      "type": "sequential",
+      "is_history_parent": true
+    }
+  ]
+}

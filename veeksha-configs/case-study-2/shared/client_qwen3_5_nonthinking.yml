@@ -1,0 +1,8 @@
+type: openai_chat_completions
+request_timeout: 180
+max_tokens_param: max_tokens
+min_tokens_param: min_tokens
+use_min_tokens_prompt_fallback: false
+additional_sampling_params: >
+  {"chat_template_kwargs": {"enable_thinking": false}}
+

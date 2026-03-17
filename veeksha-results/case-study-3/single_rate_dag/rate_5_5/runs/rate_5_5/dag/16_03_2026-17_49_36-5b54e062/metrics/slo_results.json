@@ -1,0 +1,25 @@
+{
+  "all_slos_met": true,
+  "results": [
+    {
+      "met": true,
+      "slo_metric_key": "ttfc_p95",
+      "observed_value": 0.4259539999999999,
+      "threshold": 0.75,
+      "percentile": 0.95,
+      "metric": "ttfc",
+      "name": "P95 TTFC <= 750ms",
+      "lower_is_better": true
+    },
+    {
+      "met": true,
+      "slo_metric_key": "tbc_p95",
+      "observed_value": 0.05762,
+      "threshold": 0.075,
+      "percentile": 0.95,
+      "metric": "tbc",
+      "name": "P95 TBC <= 75ms",
+      "lower_is_better": true
+    }
+  ]
+}

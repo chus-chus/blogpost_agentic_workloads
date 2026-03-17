@@ -1,0 +1,35 @@
+{
+  "all_slos_met": true,
+  "results": [
+    {
+      "met": true,
+      "slo_metric_key": "ttfc_p99",
+      "observed_value": 0.20504839999999996,
+      "threshold": 3.0,
+      "percentile": 0.99,
+      "metric": "ttfc",
+      "name": "P99 TTFC <= 3s",
+      "lower_is_better": true
+    },
+    {
+      "met": true,
+      "slo_metric_key": "e2e_p95",
+      "observed_value": 3.0535539999999997,
+      "threshold": 20.0,
+      "percentile": 0.95,
+      "metric": "e2e",
+      "name": "P95 E2E <= 20s",
+      "lower_is_better": true
+    },
+    {
+      "met": true,
+      "slo_metric_key": "tbc_p99",
+      "observed_value": 0.025296000000000058,
+      "threshold": 0.15,
+      "percentile": 0.99,
+      "metric": "tbc",
+      "name": "P99 TBC <= 150ms",
+      "lower_is_better": true
+    }
+  ]
+}

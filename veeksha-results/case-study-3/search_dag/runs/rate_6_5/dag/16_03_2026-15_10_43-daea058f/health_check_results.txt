@@ -1,0 +1,131 @@
+============================================================
+INTRA-SESSION REQUEST ARRIVAL CHECK
+============================================================
+Result: PASSED
+
+Description:
+  Metric                         Scheduler delay (actual_dispatch - ready_time)
+  Ready Time                     Parent requests completion + wait_after_ready (if available)
+
+Deviation Statistics (seconds):
+  Requests w/ Dependencies       1843
+  Min                            0.0007s
+  Mean                           0.0029s
+  Median                         0.0030s
+  P95                            0.0051s
+  P99                            0.0062s
+  Max                            0.0097s
+  Std Dev                        0.0011s
+
+Violation Info:
+  Late Threshold                 5.0s (dispatched >5.0s after ready)
+  Violations                     0
+
+
+============================================================
+SESSION DISPATCH RATE CHECK
+============================================================
+Result: PASSED
+
+Rate Statistics:
+  Total Sessions                 141
+  Measurement Duration           299.4630s
+  Expected Rate                  0.4333 sessions/sec
+  Actual Rate                    0.4675 sessions/sec
+  Error                          7.89%
+  Threshold                      15.0%
+
+Inter-Arrival Time Statistics:
+  Min                            0.0027s
+  Mean                           2.1390s
+  Median                         1.5149s
+  P95                            6.4380s
+  P99                            6.9231s
+  Max                            6.9231s
+  Std Dev                        1.9112s
+
+
+============================================================
+PROMPT LENGTH CHECK
+============================================================
+Result: PASSED
+
+Description:
+  Metric                         Prompt Length Deviation (Actual - Target)
+  Target                         Specified target_prompt_tokens
+  Threshold                      <= +/- 15.0
+
+Statistics:
+  Total Requests Checked         1984
+  Exact Matches                  1984 (100.0%)
+  Mismatches (All)               0 (0.0%)
+  Violations (> +/-15)           0 (0.0%)
+  Min Deviation                  0.0
+  Mean Deviation                 0.00
+  Median Deviation               0.0
+  P95 Deviation                  0.0
+  P99 Deviation                  0.0
+  Max Deviation                  0.0
+  Std Dev                        0.00
+
+
+============================================================
+OUTPUT LENGTH CHECK
+============================================================
+Result: PASSED
+
+Description:
+  Metric                         Output Length Deviation (Actual - Requested)
+  Target                         num_requested_output_tokens
+  Threshold                      <= +/- 15.0
+
+Statistics:
+  Total Requests Checked         1984
+  Exact Matches                  1675 (84.4%)
+  Mismatches (All)               309 (15.6%)
+  Violations (> +/-15)           0 (0.0%)
+  Min Deviation                  -3.0
+  Mean Deviation                 -0.11
+  Median Deviation               0.0
+  P95 Deviation                  0.0
+  P99 Deviation                  1.0
+  Max Deviation                  2.0
+  Std Dev                        0.47
+
+
+============================================================
+LIFECYCLE TIMING DELAYS CHECK
+============================================================
+Result: PASSED
+
+Ready-to-Dispatch Delay (scheduler_dispatched_at - scheduler_ready_at):
+  Count                          1984
+  Min                            0.0000s
+  Mean                           0.0000s
+  Median                         0.0000s
+  P95                            0.0000s
+  P99                            0.0000s
+  Max                            0.0000s
+  Std Dev                        0.0000s
+
+Dispatch-to-Pickup Delay (client_picked_up_at - scheduler_dispatched_at):
+  Count                          1984
+  Min                            0.0001s
+  Mean                           0.0025s
+  Median                         0.0011s
+  P95                            0.0081s
+  P99                            0.0119s
+  Max                            0.0680s
+  Std Dev                        0.0044s
+
+Completion-to-Result-Processing Delay (result_processed_at - client_completed_at):
+  Count                          1984
+  Min                            0.0005s
+  Mean                           0.0023s
+  Median                         0.0024s
+  P95                            0.0042s
+  P99                            0.0059s
+  Max                            0.0076s
+  Std Dev                        0.0011s
+
+

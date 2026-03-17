@@ -1,0 +1,15 @@
+{
+  "Number of Requests": 1738,
+  "Number of Errored Requests": 0,
+  "Number of Completed Requests": 1666,
+  "Number of Cancelled Requests": 0,
+  "Error Rate": 0.0,
+  "Cancellation Rate": 0.0,
+  "Number of Sessions Seen": 362.0,
+  "Successful Sessions": 305.0,
+  "Errored Sessions": 0.0,
+  "Cancelled Sessions": 0.0,
+  "Incomplete Sessions": 57.0,
+  "Observed Session Dispatch Rate": 1.1750666958567466,
+  "error_code_freq": {}
+}

@@ -1,0 +1,25 @@
+{
+  "all_slos_met": true,
+  "results": [
+    {
+      "met": true,
+      "slo_metric_key": "ttfc_p99",
+      "observed_value": 0.3539162000000001,
+      "threshold": 0.5,
+      "percentile": 0.99,
+      "metric": "ttfc",
+      "name": "P99 TTFC",
+      "lower_is_better": true
+    },
+    {
+      "met": true,
+      "slo_metric_key": "tbc_p90",
+      "observed_value": 0.0312,
+      "threshold": 0.05,
+      "percentile": 0.9,
+      "metric": "tbc",
+      "name": "P90 TBC",
+      "lower_is_better": true
+    }
+  ]
+}

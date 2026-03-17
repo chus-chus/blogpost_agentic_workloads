@@ -1,0 +1,2 @@
+# Binary plots and diagrams are better stored in Git LFS.
+*.png filter=lfs diff=lfs merge=lfs -text

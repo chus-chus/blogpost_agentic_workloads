@@ -1,0 +1,108 @@
+output_dir: chus/veeksha/benchmark_output/workload_deployment_claim_case_study/qwen/search_dag/runs/rate_6_0/dag
+seed: 42
+session_generator:
+  trace_file: chus/veeksha/traces/workload_deployment_claim_case_study/workload_b_dag.jsonl
+  wrap_mode: true
+  flavor:
+    corpus_file: traces/corpus.txt
+    page_size: 16
+    type: timed_synthetic_session
+  type: trace
+traffic_scheduler:
+  cancel_session_on_failure: false
+  interval_generator:
+    arrival_rate: 0.4
+    type: poisson
+  type: rate
+evaluators:
+- target_channels:
+  - 1
+  slos:
+  - percentile: 0.95
+    name: P95 TTFC <= 750ms
+    metric: ttfc
+    value: 0.75
+    type: constant
+  - percentile: 0.95
+    name: P95 TBC <= 75ms
+    metric: tbc
+    value: 0.075
+    type: constant
+  stream_metrics: false
+  stream_metrics_interval: 5.0
+  text_channel:
+    decode_window_enabled: true
+    decode_window_config:
+      min_active_requests: max_observed
+      selection_strategy: all
+      anchor_to_client_pickup: true
+      require_streaming: true
+    type: text
+  image_channel:
+    type: image
+  audio_channel: null
+  video_channel: null
+  type: performance
+client:
+  api_base: null
+  api_key: null
+  model: meta-llama/Meta-Llama-3-8B-Instruct
+  address_append_value: chat/completions
+  request_timeout: 180
+  additional_sampling_params: '{"chat_template_kwargs": {"enable_thinking": false}}
+
+    '
+  max_tokens_param: max_tokens
+  ignore_eos: true
+  min_tokens_param: min_tokens
+  use_min_tokens_prompt_fallback: false
+  additional_sampling_params_dict:
+    chat_template_kwargs:
+      enable_thinking: false
+  type: openai_chat_completions
+runtime:
+  max_sessions: -1
+  benchmark_timeout: 300
+  post_timeout_grace_seconds: 45
+  num_dispatcher_threads: 4
+  num_completion_threads: 4
+  num_client_threads: 8
+  pregenerate_sessions: false
+  warmup_request:
+    enabled: true
+    prompt: Warm up.
+    output_tokens: 8
+trace_recorder:
+  enabled: true
+  include_content: false
+server:
+  env_path: chus/repos/vllm_mamba_env
+  env_vars: '{}'
+  model: Qwen/Qwen3.5-35B-A3B
+  host: localhost
+  port: 0
+  api_key: token-abc123
+  gpu_ids: null
+  startup_timeout: 600
+  health_check_interval: 2.0
+  require_contiguous_gpus: true
+  tensor_parallel_size: 1
+  dtype: bfloat16
+  max_model_len: 8192
+  additional_args:
+    enable-prefix-caching: true
+    kv-cache-metrics: true
+    kv-cache-metrics-sample: 0.1
+    language-model-only: true
+    attention-config: '{"backend":"FLASH_ATTN","flash_attn_version":3,"disable_flashinfer_prefill":true,"use_trtllm_ragged_deepseek_prefill":false}'
+  type: vllm
+wandb:
+  enabled: false
+  project: null
+  entity: null
+  group: null
+  run_name: null
+  tags: []
+  notes: null
+  mode: null
+  log_artifacts: true

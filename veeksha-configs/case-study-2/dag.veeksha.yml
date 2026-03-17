@@ -1,0 +1,17 @@
+session_generator:
+  type: trace
+  trace_file: traces/workload_shape/workload_b_dag.jsonl
+  wrap_mode: true
+  flavor:
+    type: timed_synthetic_session
+    page_size: 16
+
+seed: 42
+output_dir: benchmark_output/workload_shape_case_study/qwen/dag
+
+server: !include shared/server_h100_qwen3_5_35b_a3b.yml
+traffic_scheduler: !include shared/rate_traffic.yml
+client: !include shared/client_qwen3_5_nonthinking.yml
+runtime: !include shared/runtime_qwen.yml
+evaluators: !include shared/evaluators.yml
+trace_recorder: !include shared/trace_recorder.yml

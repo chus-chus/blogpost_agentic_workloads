@@ -1,0 +1,35 @@
+{
+  "dag": {
+    "e2e_p95_s": 5.409619999999999,
+    "mean_cacheable_prompt_tokens": 2017.4618015963513,
+    "mean_delta_prompt_tokens": 500.0,
+    "mean_total_prompt_tokens": 2517.461801596351,
+    "tbc_p99_ms": 52.37667758017778,
+    "ttfc_p99_s": 0.4442532,
+    "vllm_kv_cache_usage_perc": 0.0,
+    "vllm_prefix_cache_hit_rate": 0.6903500483630215,
+    "vllm_prompt_cache_token_ratio": 1.0
+  },
+  "dag_run_dir": "chus/veeksha/benchmark_output/workload_shape_case_study/qwen/confirm_rate_0_18/runs/rate_0_18/dag/14_03_2026-14_22_08-fad4bdcd",
+  "linear": {
+    "e2e_p95_s": 3.0535539999999997,
+    "mean_cacheable_prompt_tokens": 1594.2642140468226,
+    "mean_delta_prompt_tokens": 500.0,
+    "mean_total_prompt_tokens": 2094.264214046823,
+    "tbc_p99_ms": 11.121919192373756,
+    "ttfc_p99_s": 0.20504839999999996,
+    "vllm_kv_cache_usage_perc": 0.0,
+    "vllm_prefix_cache_hit_rate": 0.4946360537397233,
+    "vllm_prompt_cache_token_ratio": 1.0
+  },
+  "linear_run_dir": "chus/veeksha/benchmark_output/workload_shape_case_study/qwen/confirm_rate_0_18/runs/rate_0_18/linear/14_03_2026-14_16_03-9eaf5f06",
+  "rate": 0.18,
+  "relative_deltas": {
+    "cacheable_prompt_mean_pct": 26.54500952983816,
+    "e2e_p95_pct": 77.15815734714369,
+    "total_prompt_mean_pct": 20.20745924563969,
+    "ttfc_p99_pct": 116.65772568817903
+  },
+  "result_healthy": true,
+  "result_status": "healthy"
+}
